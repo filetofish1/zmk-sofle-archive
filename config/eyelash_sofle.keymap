@@ -1,67 +1,304 @@
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
+
+#include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/rgb.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200 [cite: 183]
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 25 [cite: 183]
+&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
-#include <input/processors.dtsi> [cite: 183]
-#include <zephyr/dt-bindings/input/input-event-codes.h> [cite: 183]
-#include <behaviors.dtsi> [cite: 183]
-#include <dt-bindings/zmk/bt.h> [cite: 183]
-#include <dt-bindings/zmk/keys.h> [cite: 183]
-#include <dt-bindings/zmk/outputs.h> [cite: 183]
-#include <dt-bindings/zmk/pointing.h> [cite: 183]
-#include <dt-bindings/zmk/rgb.h> [
+&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
-cite: &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
-
-[
-
-cite: &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
-
-[
-
-cite: cite: behaviors {
+&msc {
+    acceleration-exponent = <1>;      // 0
+    time-to-max-speed-ms = <100>;       // 300
+    delay-ms = <0>;                   // 0
 };
 
-/* Macros: Bracket and quote tools from Jason */
-
-macros {
+&mmv {
+    time-to-max-speed-ms = <500>;
+    acceleration-exponent = <1>;
+    trigger-period-ms = <16>;
 };
 
-/* Combos from Jason */
+&soft_off { hold-time-ms = <2000>; };
 
-combos {
-    compatible = "zmk,combos";
+/ {
+    scroll_encoder: scroll_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-    [
-
-    137, = 138]
+        tap-ms = <100>;
     };
 
-    /* Keymap Layers from Jason */
+    behaviors {
+        /* Left-hand HRMs (GUI/Alt/Ctrl) */
+
+        hml: left_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            bindings = <&kp>, <&kp>;
+
+            /* Right-hand + center arrows + all thumbs */
+
+            hold-trigger-key-positions = <7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51>;
+            hold-trigger-on-release;
+        };
+
+        /* Right-hand HRMs (Ctrl/Alt/GUI) */
+
+        hmr: right_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            bindings = <&kp>, <&kp>;
+
+            /* Left-hand + center arrows + all thumbs */
+
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44>;
+            hold-trigger-on-release;
+        };
+
+        /* Shift variants (shorter tapping term for quick capitalization) */
+
+        hsl: left_shift_hrm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HSL";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <175>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51>;
+            hold-trigger-on-release;
+        };
+
+        hsr: right_shift_hrm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HSR";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <175>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44>;
+            hold-trigger-on-release;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        soft_off_left {
+            bindings = <&soft_off>;
+            key-positions = <27 29 31>;
+        };
+
+        soft_off_right {
+            bindings = <&soft_off>;
+            key-positions = <33 35 37>;
+        };
+
+        reset_left {
+            bindings = <&sys_reset>;
+            key-positions = <14 16 18>;
+        };
+
+        reset_right {
+            bindings = <&sys_reset>;
+            key-positions = <20 22 24>;
+        };
+
+        bootloader_left {
+            bindings = <&bootloader>;
+            key-positions = <40 42 44>;
+        };
+
+        bootloader_right {
+            bindings = <&bootloader>;
+            key-positions = <46 48 50>;
+        };
+
+        bracket_soft {
+            bindings = <&bracket_soft>;
+            key-positions = <29 30>;
+            layers = <1>;
+        };
+
+        bracket_quote {
+            bindings = <&bracket_quote>;
+            key-positions = <34 35>;
+            layers = <1>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <21 22>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <22 23>;
+        };
+
+        apostrophe {
+            bindings = <&kp SQT>;
+            key-positions = <49 50>;
+        };
+    };
+
+    macros {
+        bracket_soft: bracket_soft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT>;
+            label = "BRACKET_SOFT";
+        };
+
+        bracket_square: bracket_square {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RBKT &kp LEFT>;
+            label = "BRACKET_SQUARE";
+        };
+
+        bracket_sqiggly: bracket_sqiggly {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC &kp RBRC &kp LEFT>;
+            label = "BRACKET_SQIGGLY";
+        };
+
+        bracket_quote: bracket_quote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DQT &kp DQT &kp LEFT_ARROW>;
+            label = "BRACKET_QUOTE";
+        };
+
+        bracket_triangle: bracket_triangle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp GT &kp LEFT>;
+            label = "BRACKET_TRIANGLE";
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
 
-        [
-
-        layer_0 {
+        default {
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5       &kp UP     &kp N6     &kp N7  &kp N8     &kp N9   &kp N9    &kp DEL
-&kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T        &kp DOWN   &kp Y      &kp U   &kp I      &kp O    &kp P     &kp BSLH
-&kp LCTRL  &kp A   &kp S   &kp D   &kp F   &kp G        &kp LEFT   &kp H      &kp J   &kp K      &kp L    &kp SEMI  &kp RET
-&kp CAPS   &kp Z   &kp X   &kp C   &kp V   &kp B        &kp RIGHT  &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
-&trans     &trans  &trans  &trans  &trans  &kp LSHFT    &kp RET    &kp SPACE  &trans  &trans     &trans   &trans
+&kp ESC           &kp N1       &kp N2       &kp N3        &kp N4  &kp N5            &kp UP_ARROW     &kp N6     &kp N7  &kp N8        &kp N9       &kp N0          &kp DEL
+&kp TAB           &kp Q        &kp W        &kp E         &kp R   &kp T             &kp DOWN_ARROW   &kp Y      &kp U   &kp I         &kp O        &kp P           &kp BACKSPACE
+&kp LEFT_CONTROL  &hml LGUI A  &hml LALT S  &hml LCTRL D  &kp F   &kp G             &kp LEFT_ARROW   &kp H      &kp J   &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &kp ENTER
+&caps_word        &kp Z        &kp X        &kp C         &kp V   &kp B             &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA     &kp DOT      &kp FSLH        &tog 6
+&kp C_MUTE        &none        &none        &tog 2        &mo 1   &kp LEFT_SHIFT    &kp ENTER        &kp SPACE  &mo 3   &mo 4         &none        &none
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+            display-name = "default";
+        };
+
+        num_symbol {
+            bindings = <
+&trans  &trans           &trans           &trans     &trans      &trans           &trans  &trans     &trans         &trans        &trans                &trans                 &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN      &kp POUND  &kp DOLLAR  &kp PERCENT      &trans  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp N1           &kp N2           &kp N3     &kp N4      &kp N5           &trans  &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp TILDE
+&trans  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LBKT   &kp RBKT    &kp BACKSLASH    &trans  &kp PIPE   &kp MINUS      &kp UNDER     &kp EQUAL             &kp PLUS               &kp GRAVE
+&trans  &trans           &trans           &trans     &trans      &trans           &trans  &trans     &trans         &trans        &trans                &trans
+            >;
+        };
+
+        navigation {
+            bindings = <
+&trans  &trans            &trans          &trans         &trans     &trans           &trans  &trans  &trans    &trans    &trans     &trans    &trans
+&trans  &kp LA(F4)        &trans          &kp LC(LS(T))  &kp LC(T)  &kp LC(N)        &trans  &trans  &trans    &kp UP    &trans     &kp BSPC  &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LALT       &kp TAB    &kp LS(LC(N))    &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL   &trans
+&trans  &kp LC(Z)         &kp LC(X)       &kp LC(C)      &kp LC(V)  &kp LC(Y)        &trans  &trans  &trans    &trans    &trans     &trans    &trans
+&trans  &trans            &trans          &trans         &trans     &trans           &trans  &trans  &trans    &trans    &trans     &trans
+            >;
+        };
+
+        numpad {
+            bindings = <
+&trans  &trans     &trans        &trans        &trans         &trans        &trans  &trans  &trans  &trans  &trans  &trans         &trans
+&trans  &trans     &kp DEL       &kp UP_ARROW  &kp BACKSPACE  &trans        &trans  &trans  &kp N7  &kp N8  &kp N9  &kp BACKSPACE  &trans
+&trans  &trans     &kp LEFT      &kp DOWN      &kp RIGHT      &kp EQUAL     &trans  &trans  &kp N4  &kp N5  &kp N6  &trans         &trans
+&trans  &kp SLASH  &kp ASTERISK  &kp MINUS     &kp PLUS       &kp PERIOD    &trans  &kp N0  &kp N1  &kp N2  &kp N3  &trans         &trans
+&trans  &trans     &trans        &trans        &trans         &trans        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        function {
+            bindings = <
+&trans  &trans           &trans          &trans  &trans           &trans     &trans  &trans   &trans  &trans  &trans  &trans   &trans
+&trans  &kp PAUSE_BREAK  &kp SCROLLLOCK  &trans  &kp PRINTSCREEN  &kp F11    &trans  &kp F12  &trans  &trans  &trans  &trans   &trans
+&trans  &kp F1           &kp F2          &kp F3  &kp F4           &kp F5     &trans  &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans           &trans          &trans  &trans           &trans     &trans  &trans   &trans  &trans  &trans  &trans   &trans
+&trans  &trans           &trans          &trans  &trans           &trans     &trans  &trans   &trans  &trans  &trans  &trans
+            >;
+        };
+
+        page_nav {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans         &trans    &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans         &trans    &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME  &kp END  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans         &trans    &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans         &trans    &trans   &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans          &trans          &trans           &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans          &trans          &trans           &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mkp RCLK       &mkp MCLK       &trans           &trans
+            >;
+        };
+
+        system {
+            bindings = <
+&trans  &trans        &trans        &trans          &trans        &trans    &trans  &trans  &trans           &trans          &trans           &trans           &trans
+&trans  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1    &bt BT_SEL 0  &trans    &trans  &trans  &trans           &trans          &trans           &trans           &trans
+&trans  &trans        &trans        &out OUT_USB    &out OUT_BLE  &trans    &trans  &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans
+&trans  &trans        &trans        &bt BT_CLR_ALL  &bt BT_CLR    &trans    &trans  &trans  &trans           &trans          &trans           &trans           &trans
+&trans  &trans        &trans        &trans          &trans        &trans    &trans  &trans  &trans           &trans          &trans           &trans
             >;
         };
     };
 
-    /* Conditional Layers from Jason */
-
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        [cite: 179]
+        page_nav {
+            if-layers = <1 2>;
+            then-layer = <5>;
+        };
+
+        system_layer {
+            if-layers = <1 3>;
+            then-layer = <7>;
+        };
     };
 };
