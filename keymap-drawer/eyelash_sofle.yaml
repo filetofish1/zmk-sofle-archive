@@ -521,18 +521,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [27, 29, 31]
-  k: '&soft_off'
-- p: [33, 35, 37]
-  k: '&soft_off'
-- p: [14, 16, 18]
-  k: {t: '$$mdi:backup-restore$$', type: bootloader}
-- p: [20, 22, 24]
-  k: {t: '$$mdi:backup-restore$$', type: bootloader}
-- p: [40, 42, 44]
-  k: $$mdi:progress-download$$
-- p: [46, 48, 50]
-  k: $$mdi:progress-download$$
 - p: [29, 30]
   k: '&bracket_soft'
   l: [num_symbol]
