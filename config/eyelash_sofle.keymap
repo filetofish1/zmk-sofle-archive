@@ -225,6 +225,8 @@
 &trans  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LBKT   &kp RBKT    &kp BACKSLASH    &trans  &kp PIPE   &kp MINUS      &kp UNDER     &kp EQUAL             &kp PLUS               &kp GRAVE
 &trans  &trans           &trans           &trans     &trans      &trans           &trans  &trans     &trans         &trans        &trans                &trans
             >;
+
+            label = "num_symbol";
         };
 
         navigation {
@@ -235,6 +237,8 @@
 &trans  &kp LC(Z)         &kp LC(X)       &kp LC(C)      &kp LC(V)  &kp LC(Y)        &trans  &trans  &trans    &trans    &trans     &trans    &trans
 &trans  &trans            &trans          &trans         &trans     &trans           &trans  &trans  &trans    &trans    &trans     &trans
             >;
+
+            label = "browser";
         };
 
         numpad {
@@ -245,6 +249,8 @@
 &trans  &kp SLASH  &kp ASTERISK  &kp MINUS     &kp PLUS       &kp PERIOD    &trans  &kp N0  &kp N1  &kp N2  &kp N3  &trans         &trans
 &trans  &trans     &trans        &trans        &trans         &trans        &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "numpad";
         };
 
         function {
@@ -255,6 +261,8 @@
 &trans  &trans           &trans          &trans  &trans           &trans     &trans  &trans   &trans  &trans  &trans  &trans   &trans
 &trans  &trans           &trans          &trans  &trans           &trans     &trans  &trans   &trans  &trans  &trans  &trans
             >;
+
+            label = "f_keys";
         };
 
         page_nav {
@@ -275,6 +283,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans          &trans           &trans          &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK       &mkp RCLK       &mkp MCLK       &trans           &trans
             >;
+
+            label = "mouse";
         };
 
         system {
@@ -285,6 +295,8 @@
 &trans  &trans        &trans        &bt BT_CLR_ALL  &bt BT_CLR    &trans    &trans  &trans  &trans           &trans          &trans           &trans           &trans
 &trans  &trans        &trans        &trans          &trans        &trans    &trans  &trans  &trans           &trans          &trans           &trans
             >;
+
+            label = "system";
         };
     };
 
