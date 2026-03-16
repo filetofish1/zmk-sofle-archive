@@ -205,7 +205,7 @@
 &trans  &trans           &trans           &trans     &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans
             >;
 
-            label = "num_symbol";
+            label = "numbers";
         };
 
         numpad_arrow {
@@ -217,19 +217,20 @@
 &trans  &trans  &trans    &trans        &trans         &trans             &trans  &trans      &trans  &trans  &trans  &trans
             >;
 
-            label = "npad_arrow";
+            label = "npad/arrow";
         };
 
         function {
             bindings = <
-&trans  &trans           &trans          &trans  &trans           &trans     &trans  &trans   &trans    &trans         &trans     &trans     &trans
-&trans  &kp PAUSE_BREAK  &kp SCROLLLOCK  &trans  &kp PRINTSCREEN  &kp F11    &trans  &kp F12  &kp PIPE  &kp BACKSLASH  &kp TILDE  &kp GRAVE  &trans
-&trans  &kp F1           &kp F2          &kp F3  &kp F4           &kp F5     &trans  &kp F6   &kp F7    &kp F8         &kp F9     &kp F10    &trans
-&trans  &trans           &trans          &trans  &trans           &trans     &trans  &trans   &trans    &trans         &trans     &trans     &trans
-&trans  &trans           &trans          &trans  &trans           &trans     &trans  &trans   &trans    &trans         &trans     &trans
+&trans  &trans           &trans          &trans  &trans           &trans     &trans  &trans             &trans           &trans            &trans         &trans            &trans
+&trans  &kp PAUSE_BREAK  &kp SCROLLLOCK  &trans  &kp PRINTSCREEN  &kp F11    &trans  &kp F12            &kp PIPE         &kp BACKSLASH     &kp TILDE      &kp GRAVE         &trans
+&trans  &kp F1           &kp F2          &kp F3  &kp F4           &kp F5     &trans  &kp F6             &kp F7           &kp F8            &kp F9         &kp F10           &trans
+&trans  &trans           &trans          &trans  &trans           &trans     &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &kp C_AC_BACK  &kp C_AC_FORWARD  &trans
+&trans  &trans           &trans          &trans  &trans           &trans     &trans  &trans             &trans           &trans            &trans         &trans
             >;
 
             label = "f_keys";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         navigation_mouse {
@@ -241,7 +242,7 @@
 &trans  &trans            &trans          &trans         &trans     &trans        &trans  &mkp LCLK       &mkp RCLK       &mkp MCLK       &trans           &trans
             >;
 
-            label = "bw_msc";
+            label = "bw/msc";
         };
 
         system {
@@ -265,7 +266,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans         &trans    &trans   &trans
             >;
 
-            label = "page_nav";
+            label = "pagenav";
         };
     };
 
