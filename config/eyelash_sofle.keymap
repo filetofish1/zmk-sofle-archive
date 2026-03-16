@@ -114,7 +114,7 @@
 
         bracket_quote {
             bindings = <&bracket_quote>;
-            key-positions = <34 35>;
+            key-positions = <29 28>;
             layers = <1>;
         };
 
@@ -131,6 +131,11 @@
         apostrophe {
             bindings = <&kp SQT>;
             key-positions = <36 37>;
+        };
+
+        tggle_numpad {
+            bindings = <&tog 2>;
+            key-positions = <60 61>;
         };
     };
 
@@ -179,8 +184,8 @@
 &kp ESC           &kp N1       &kp N2       &kp N3        &kp N4          &kp N5    &kp UP_ARROW     &kp N6         &kp N7     &kp N8        &kp N9       &kp N0          &kp TILDE
 &kp TAB           &kp Q        &kp W        &kp E         &kp R           &kp T     &kp DOWN_ARROW   &kp Y          &kp U      &kp I         &kp O        &kp P           &kp DELETE
 &kp LEFT_CONTROL  &hml LGUI A  &hml LALT S  &hml LCTRL D  &kp F           &kp G     &kp LEFT_ARROW   &kp H          &kp J      &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &kp ENTER
-&caps_word        &kp Z        &kp X        &kp C         &kp V           &kp B     &kp RIGHT_ARROW  &kp N          &kp M      &kp COMMA     &kp DOT      &kp FSLH        &tog 6
-&kp C_MUTE        &none        &none        &mo 3         &kp LEFT_SHIFT  &mo 1     &kp ENTER        &kp BACKSPACE  &kp SPACE  &mo 4         &none        &none
+&caps_word        &kp Z        &kp X        &kp C         &kp V           &kp B     &kp RIGHT_ARROW  &kp N          &kp M      &kp COMMA     &kp DOT      &kp FSLH        &tog 4
+&kp C_MUTE        &none        &none        &mo 2         &kp LEFT_SHIFT  &mo 1     &kp ENTER        &kp BACKSPACE  &kp SPACE  &mo 3         &none        &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -199,26 +204,16 @@
             label = "num_symbol";
         };
 
-        numpad {
+        numpad_arrow {
             bindings = <
-&trans  &trans     &trans        &trans        &trans         &trans        &trans  &trans  &trans  &trans  &trans  &trans         &trans
-&trans  &trans     &kp DEL       &kp UP_ARROW  &kp BACKSPACE  &trans        &trans  &trans  &kp N7  &kp N8  &kp N9  &kp BACKSPACE  &trans
-&trans  &trans     &kp LEFT      &kp DOWN      &kp RIGHT      &kp EQUAL     &trans  &trans  &kp N4  &kp N5  &kp N6  &trans         &trans
-&trans  &kp SLASH  &kp ASTERISK  &kp MINUS     &kp PLUS       &kp PERIOD    &trans  &kp N0  &kp N1  &kp N2  &kp N3  &trans         &trans
-&trans  &trans     &trans        &trans        &trans         &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans        &trans         &trans    &trans  &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp DEL   &kp UP_ARROW  &kp BACKSPACE  &trans    &trans  &kp EQUAL   &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT      &trans    &trans  &kp PERIOD  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans    &trans        &trans         &trans    &trans  &kp N0      &kp N1  &kp N2  &kp N3  &trans  &trans
+&trans  &trans  &trans    &trans        &trans         &trans    &trans  &trans      &trans  &trans  &trans  &trans
             >;
 
-            label = "numpad";
-        };
-
-        layer_8 {
-            bindings = <
-&trans  &trans  &trans    &trans        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &kp UP_ARROW  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
+            label = "npad_arrow";
         };
 
         function {
@@ -233,16 +228,6 @@
             label = "f_keys";
         };
 
-        page_nav {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans         &trans    &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans         &trans    &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME  &kp END  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans         &trans    &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans         &trans    &trans   &trans
-            >;
-        };
-
         navigation_mouse {
             bindings = <
 &trans  &trans            &trans          &trans         &trans     &trans           &trans  &trans          &trans          &trans          &trans           &trans  &trans
@@ -252,7 +237,7 @@
 &trans  &trans            &trans          &trans         &trans     &trans           &trans  &mkp LCLK       &mkp RCLK       &mkp MCLK       &trans           &trans
             >;
 
-            label = "bwr+msc";
+            label = "bwr_mou";
         };
 
         system {
@@ -266,19 +251,31 @@
 
             label = "system";
         };
+
+        page_nav {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans         &trans    &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans         &trans    &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME  &kp END  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans         &trans    &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans         &trans    &trans   &trans
+            >;
+
+            label = "page_nav";
+        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         page_nav {
-            if-layers = <1 7>;
-            then-layer = <5>;
+            if-layers = <4 2>;
+            then-layer = <6>;
         };
 
         system_layer {
             if-layers = <1 2>;
-            then-layer = <3>;
+            then-layer = <2>;
         };
     };
 };
