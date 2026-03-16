@@ -138,7 +138,7 @@
 
         tggle_numpad {
             bindings = <&tog 2>;
-            key-positions = <61 34 35>;
+            key-positions = <61 35 36>;
             layers = <0 2>;
         };
 
