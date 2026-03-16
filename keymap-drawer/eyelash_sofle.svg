@@ -672,17 +672,21 @@ rect.held, rect.combo.held {
 <text x="812" y="147" class="combo shifted">&quot;</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="627" y="258" width="28" height="26" class="combo"/>
-<text x="641" y="271" class="combo tap">
-<tspan x="641" dy="-0.6em">npad/</tspan><tspan x="641" dy="1.2em">arrow</tspan>
+<path d="M691,182 l-14,59" class="combo"/>
+<path d="M691,182 l25,-28" class="combo"/>
+<rect rx="6" ry="6" x="677" y="169" width="28" height="26" class="combo"/>
+<text x="691" y="182" class="combo tap">
+<tspan x="691" dy="-0.6em">npad/</tspan><tspan x="691" dy="1.2em">arrow</tspan>
 </text>
-<text x="641" y="282" class="combo hold">toggle</text>
+<text x="691" y="193" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="269" y="258" width="28" height="26" class="combo"/>
+<path d="M196,182 l-40,-25" class="combo"/>
+<path d="M196,182 l45,62" class="combo"/>
+<rect rx="6" ry="6" x="182" y="169" width="28" height="26" class="combo"/>
 <a href="#bwmsc">
-<text x="283" y="271" class="combo tap layer-activator">bw/msc</text>
-</a><text x="283" y="282" class="combo hold">toggle</text>
+<text x="196" y="182" class="combo tap layer-activator">bw/msc</text>
+</a><text x="196" y="193" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1366,11 +1370,13 @@ rect.held, rect.combo.held {
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="627" y="258" width="28" height="26" class="combo"/>
-<text x="641" y="271" class="combo tap">
-<tspan x="641" dy="-0.6em">npad/</tspan><tspan x="641" dy="1.2em">arrow</tspan>
+<path d="M691,182 l-14,59" class="combo"/>
+<path d="M691,182 l25,-28" class="combo"/>
+<rect rx="6" ry="6" x="677" y="169" width="28" height="26" class="combo"/>
+<text x="691" y="182" class="combo tap">
+<tspan x="691" dy="-0.6em">npad/</tspan><tspan x="691" dy="1.2em">arrow</tspan>
 </text>
-<text x="641" y="282" class="combo hold">toggle</text>
+<text x="691" y="193" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2040,10 +2046,12 @@ rect.held, rect.combo.held {
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="269" y="258" width="28" height="26" class="combo"/>
+<path d="M196,182 l-40,-25" class="combo"/>
+<path d="M196,182 l45,62" class="combo"/>
+<rect rx="6" ry="6" x="182" y="169" width="28" height="26" class="combo"/>
 <a href="#bwmsc">
-<text x="283" y="271" class="combo tap layer-activator">bw/msc</text>
-</a><text x="283" y="282" class="combo hold">toggle</text>
+<text x="196" y="182" class="combo tap layer-activator">bw/msc</text>
+</a><text x="196" y="193" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
