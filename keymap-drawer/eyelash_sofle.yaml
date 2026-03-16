@@ -374,9 +374,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - RGB COLOR HSB(24,100,50)
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB SAD
+  - RGB COLOR HSB(22,100,50)
+  - RGB SAI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
