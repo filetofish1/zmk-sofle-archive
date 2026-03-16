@@ -474,3 +474,6 @@ combos:
 - p: [60, 61]
   k: {t: npad/arrow, h: toggle}
   l: [default, npad/arrow]
+- p: [55, 56]
+  k: {t: bw/msc, h: toggle}
+  l: [default, bw/msc]
