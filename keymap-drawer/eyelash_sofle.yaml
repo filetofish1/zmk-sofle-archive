@@ -464,9 +464,13 @@ combos:
   l: [num_symbol]
 - p: [21, 22]
   k: {t: '-', s: _}
+  l: [default]
 - p: [22, 23]
   k: {t: '=', s: +}
+  l: [default]
 - p: [36, 37]
   k: {t: '''', s: '"'}
+  l: [default]
 - p: [60, 61]
   k: {t: npad_arrow, h: toggle}
+  l: [default]
