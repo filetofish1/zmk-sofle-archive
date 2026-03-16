@@ -139,7 +139,7 @@
         tggle_numpad {
             bindings = <&tog 2>;
             key-positions = <60 61>;
-            layers = <0>;
+            layers = <0 2>;
         };
     };
 
@@ -234,14 +234,14 @@
 
         navigation_mouse {
             bindings = <
-&trans  &trans            &trans          &trans         &trans     &trans           &trans  &trans          &trans          &trans          &trans           &trans  &trans
-&trans  &kp LA(F4)        &trans          &kp LC(LS(T))  &kp LC(T)  &kp LC(N)        &trans  &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LALT       &kp TAB    &kp LS(LC(N))    &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &kp LC(Z)         &kp LC(X)       &kp LC(C)      &kp LC(V)  &kp LC(Y)        &trans  &trans          &trans          &trans          &trans           &trans  &trans
-&trans  &trans            &trans          &trans         &trans     &trans           &trans  &mkp LCLK       &mkp RCLK       &mkp MCLK       &trans           &trans
+&trans  &trans            &trans          &trans         &trans     &trans        &trans  &trans          &trans          &trans          &trans           &trans  &trans
+&trans  &kp LC(LS(N))     &kp LC(N)       &kp LC(LS(T))  &kp LC(T)  &trans        &trans  &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans  &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LALT       &kp TAB    &kp LA(F4)    &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &kp LC(Z)         &kp LC(X)       &kp LC(C)      &kp LC(V)  &kp LC(Y)     &trans  &trans          &trans          &trans          &trans           &trans  &trans
+&trans  &trans            &trans          &trans         &trans     &trans        &trans  &mkp LCLK       &mkp RCLK       &mkp MCLK       &trans           &trans
             >;
 
-            label = "bwr_mou";
+            label = "bw_msc";
         };
 
         system {
