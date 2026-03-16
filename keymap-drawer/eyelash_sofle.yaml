@@ -471,7 +471,7 @@ combos:
 - p: [36, 37]
   k: {t: '''', s: '"'}
   l: [default]
-- p: [61, 34, 35]
+- p: [61, 35, 36]
   k: {t: npad/arrow, h: toggle}
   l: [default, npad/arrow]
 - p: [28, 29, 55]
