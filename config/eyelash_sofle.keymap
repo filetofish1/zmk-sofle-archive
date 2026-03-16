@@ -138,13 +138,13 @@
 
         tggle_numpad {
             bindings = <&tog 2>;
-            key-positions = <60 61>;
+            key-positions = <61 34 35>;
             layers = <0 2>;
         };
 
         tggle_browser {
             bindings = <&tog 4>;
-            key-positions = <55 56>;
+            key-positions = <28 29 55>;
             layers = <0 4>;
         };
     };
