@@ -281,8 +281,8 @@
         };
 
         system_layer {
-            if-layers = <1 2>;
-            then-layer = <2>;
+            if-layers = <2 3>;
+            then-layer = <5>;
         };
     };
 };
