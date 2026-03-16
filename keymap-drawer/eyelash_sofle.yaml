@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: bwr_mou, h: toggle}
+  - {t: bw_msc, h: toggle}
   - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -260,7 +260,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  bwr_mou:
+  bw_msc:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -275,11 +275,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Alt+F4
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Sft+N
+  - Ctl+N
   - Ctl+Sft+T
   - Ctl+T
-  - Ctl+N
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-up$$
   - $$mdi:pan-left$$
@@ -292,7 +292,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-tab$$
-  - Sft+Ctl+N
+  - Alt+F4
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -473,4 +473,4 @@ combos:
   l: [default]
 - p: [60, 61]
   k: {t: npad_arrow, h: toggle}
-  l: [default]
+  l: [default, npad_arrow]
