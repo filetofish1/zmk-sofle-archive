@@ -242,11 +242,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - AC BACK
-  - AC FORWARD
-  - PLAY PAUSE
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
+  - PLAY PAUSE
+  - AC BACK
+  - AC FORWARD
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -468,12 +468,12 @@ combos:
 - p: [22, 23]
   k: {t: '=', s: +}
   l: [default]
-- p: [36, 37]
+- p: [47, 48]
   k: {t: '''', s: '"'}
   l: [default]
-- p: [61, 35, 36]
+- p: [61, 35, 34]
   k: {t: npad/arrow, h: toggle}
   l: [default, npad/arrow]
-- p: [28, 29, 55]
+- p: [29, 55, 30]
   k: {t: bw/msc, h: toggle}
   l: [default, bw/msc]
