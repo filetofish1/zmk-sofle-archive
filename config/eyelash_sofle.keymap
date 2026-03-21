@@ -132,7 +132,7 @@
 
         apostrophe {
             bindings = <&kp SQT>;
-            key-positions = <47 48>;
+            key-positions = <17 16>;
             layers = <0>;
         };
 
