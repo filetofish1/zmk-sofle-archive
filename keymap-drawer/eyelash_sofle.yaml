@@ -168,7 +168,7 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, s: '?'}
@@ -467,9 +467,6 @@ combos:
   l: [default]
 - p: [22, 23]
   k: {t: '=', s: +}
-  l: [default]
-- p: [17, 16]
-  k: {t: '''', s: '"'}
   l: [default]
 - p: [61, 35, 34]
   k: {t: npad/arrow, h: toggle}
