@@ -265,11 +265,11 @@
 
         page_nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans         &trans     &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &kp UP_ARROW   &trans     &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp PAGE_UP     &kp PAGE_DOWN  &kp HOME   &kp END  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans         &trans     &trans
+&trans  &trans  &trans  &trans            &trans          &trans    &trans  &trans  &trans          &trans         &trans     &trans   &trans
+&trans  &trans  &trans  &trans            &trans          &trans    &trans  &trans  &trans          &kp UP_ARROW   &trans     &trans   &trans
+&trans  &trans  &trans  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT  &trans   &trans
+&trans  &trans  &trans  &trans            &trans          &trans    &trans  &trans  &kp PAGE_UP     &kp PAGE_DOWN  &kp HOME   &kp END  &trans
+&trans  &trans  &trans  &trans            &trans          &trans    &trans  &trans  &trans          &trans         &trans     &trans
             >;
 
             label = "pagenav";
