@@ -202,7 +202,7 @@
             display-name = "default";
         };
 
-        num_symbol {
+        symbols {
             bindings = <
 &trans  &trans           &trans           &trans    &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans                 &trans
 &trans  &kp N1           &kp N2           &kp N3    &kp N4      &kp N5         &trans  &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
@@ -211,16 +211,16 @@
 &trans  &trans           &trans           &trans    &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans
             >;
 
-            label = "numbers";
+            label = "symbols_numbers";
         };
 
         numpad_arrow {
             bindings = <
-&trans        &trans     &trans    &trans        &trans         &trans             &trans  &trans           &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ALT  &kp TAB    &kp DEL   &kp UP_ARROW  &kp BACKSPACE  &trans             &trans  &kp EQUAL        &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans        &trans     &kp LEFT  &kp DOWN      &kp RIGHT      &trans             &trans  &kp PERIOD       &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans        &kp SLASH  &kp STAR  &kp MINUS     &kp PLUS       &kp PRINTSCREEN    &trans  &kp N0           &kp N1  &kp N2  &kp N3  &trans  &trans
-&trans        &trans     &trans    &trans        &trans         &trans             &trans  &kp RIGHT_SHIFT  &trans  &trans  &trans  &trans
+&trans        &trans     &trans    &trans        &trans     &trans             &trans  &trans           &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT  &kp TAB    &trans    &kp UP_ARROW  &trans     &trans             &trans  &kp EQUAL        &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans        &trans     &kp LEFT  &kp DOWN      &kp RIGHT  &kp DELETE         &trans  &kp PERIOD       &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans        &kp SLASH  &kp STAR  &kp MINUS     &kp PLUS   &kp PRINTSCREEN    &trans  &kp N0           &kp N1  &kp N2  &kp N3  &trans  &trans
+&trans        &trans     &trans    &trans        &trans     &trans             &trans  &kp RIGHT_SHIFT  &trans  &trans  &trans  &trans
             >;
 
             label = "npad/arrow";
@@ -265,11 +265,11 @@
 
         page_nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans         &trans    &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans         &trans    &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME  &kp END  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans         &trans    &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans         &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans         &trans     &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &kp UP_ARROW   &trans     &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp PAGE_UP     &kp PAGE_DOWN  &kp HOME   &kp END  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans         &trans     &trans
             >;
 
             label = "pagenav";
