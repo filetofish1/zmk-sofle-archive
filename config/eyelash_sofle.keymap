@@ -45,9 +45,9 @@
             label = "HML";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <250>;
+            tapping-term-ms = <230>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <240>;
             bindings = <&kp>, <&kp>;
 
             /* Right-hand + center arrows + all thumbs */
@@ -63,9 +63,9 @@
             label = "HMR";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <250>;
+            tapping-term-ms = <230>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <240>;
             bindings = <&kp>, <&kp>;
 
             /* Left-hand + center arrows + all thumbs */
