@@ -212,7 +212,7 @@
             bindings = <
 &trans        &trans     &trans    &trans        &trans     &trans             &trans  &trans      &trans  &trans  &trans  &trans   &trans
 &kp LEFT_ALT  &kp TAB    &trans    &kp UP_ARROW  &trans     &trans             &trans  &kp EQUAL   &kp N7  &kp N8  &kp N9  &trans   &trans
-&trans        &mo 6      &kp LEFT  &kp DOWN      &kp RIGHT  &kp DELETE         &trans  &kp PERIOD  &kp N4  &kp N5  &kp N6  &kp SQT  &trans
+&trans        &mo 6      &kp LEFT  &kp DOWN      &kp RIGHT  &trans             &trans  &kp PERIOD  &kp N4  &kp N5  &kp N6  &kp SQT  &trans
 &trans        &kp SLASH  &kp STAR  &kp MINUS     &kp PLUS   &kp PRINTSCREEN    &trans  &kp N0      &kp N1  &kp N2  &kp N3  &trans   &trans
 &trans        &trans     &trans    &trans        &trans     &trans             &trans  &trans      &trans  &trans  &trans  &trans
             >;
@@ -247,11 +247,11 @@
 
         system {
             bindings = <
-&trans  &trans        &trans        &trans          &trans        &trans    &trans  &trans  &trans           &trans           &trans                            &trans           &trans
-&trans  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1    &bt BT_SEL 0  &trans    &trans  &trans  &trans           &trans           &rgb_ug RGB_BRD                   &rgb_ug RGB_BRI  &trans
-&trans  &trans        &trans        &out OUT_USB    &out OUT_BLE  &trans    &trans  &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_EFR                   &rgb_ug RGB_EFF  &trans
-&trans  &trans        &trans        &bt BT_CLR_ALL  &bt BT_CLR    &trans    &trans  &trans  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_COLOR_HSB(10,100,50)  &rgb_ug RGB_SAI  &trans
-&trans  &trans        &trans        &trans          &trans        &trans    &trans  &trans  &trans           &trans           &trans                            &trans
+&trans  &trans          &trans        &trans        &trans        &trans          &trans  &trans  &trans           &trans           &trans                            &trans           &trans
+&trans  &bt BT_SEL 4    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &trans  &trans  &trans           &trans           &rgb_ug RGB_BRD                   &rgb_ug RGB_BRI  &trans
+&trans  &trans          &trans        &out OUT_USB  &out OUT_BLE  &trans          &trans  &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_EFR                   &rgb_ug RGB_EFF  &trans
+&trans  &bt BT_CLR_ALL  &trans        &trans        &bt BT_CLR    &trans          &trans  &trans  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_COLOR_HSB(10,100,50)  &rgb_ug RGB_SAI  &trans
+&trans  &trans          &trans        &trans        &trans        &trans          &trans  &trans  &trans           &trans           &trans                            &trans
             >;
 
             label = "system";
