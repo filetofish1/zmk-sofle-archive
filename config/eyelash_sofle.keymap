@@ -50,7 +50,7 @@
             require-prior-idle-ms = <250>;
             flavor = "balanced";
             hold-trigger-on-release;
-            hold-trigger-key-positions = <20 21 22 23 24 34 35 36 37 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 26>;
+            hold-trigger-key-positions = <20 21 22 23 24 34 35 36 37 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 26 59 60 61>;
         };
 
         hrm_R: hrm_R {
@@ -59,7 +59,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <13 14 15 16 17 18 26 27 28 29 30 31 41 42 43 44 39 40>;
+            hold-trigger-key-positions = <13 14 15 16 17 18 26 27 28 29 30 31 41 42 43 44 39 40 57 56 55>;
             hold-trigger-on-release;
             flavor = "balanced";
             tapping-term-ms = <750>;
@@ -67,18 +67,18 @@
             require-prior-idle-ms = <250>;
         };
 
-        mod_2: mod_2 {
+        mod2: mod2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "MOD_2";
+            label = "MOD2";
             #binding-cells = <0>;
             bindings = <&mo 2>, <&tog 2>;
 
             tapping-term-ms = <200>;
         };
 
-        mod_3: mod_3 {
+        mod3: mod3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "MOD_3";
+            label = "MOD3";
             #binding-cells = <0>;
             bindings = <&mo 3>, <&tog 3>;
 
@@ -174,7 +174,7 @@
 &kp ESCAPE        &kp Q                &kp W              &kp E              &kp R                  &kp T     &kp DOWN_ARROW   &kp Y          &kp U                   &kp I               &kp O               &kp P                         &kp DELETE
 &kp TAB           &hrm_L LEFT_SHIFT A  &hrm_L LEFT_GUI S  &hrm_L LEFT_ALT D  &hrm_L LEFT_CONTROL F  &kp G     &kp LEFT_ARROW   &kp H          &hrm_R RIGHT_CONTROL J  &hrm_R RIGHT_ALT K  &hrm_R RIGHT_GUI L  &hrm_R RIGHT_SHIFT SEMICOLON  &kp ENTER
 &kp LEFT_CONTROL  &kp Z                &kp X              &kp C              &kp V                  &kp B     &kp RIGHT_ARROW  &kp N          &kp M                   &kp COMMA           &kp DOT             &kp FSLH                      &tog 4
-&kp C_MUTE        &none                &none              &mod_2             &kp LEFT_SHIFT         &mo 1     &kp ENTER        &kp BACKSPACE  &kp SPACE               &mod_3              &none               &none
+&kp C_MUTE        &none                &none              &mod2              &kp LEFT_SHIFT         &mo 1     &kp ENTER        &kp BACKSPACE  &kp SPACE               &mod3               &none               &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
