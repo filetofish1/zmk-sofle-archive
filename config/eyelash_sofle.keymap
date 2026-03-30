@@ -50,7 +50,7 @@
             require-prior-idle-ms = <250>;
             flavor = "balanced";
             hold-trigger-on-release;
-            hold-trigger-key-positions = <20 21 22 23 24 34 35 36 37 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 26 59 60 61>;
+            hold-trigger-key-positions = <20 21 22 23 24 34 35 36 37 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 59 60 61 13>;
         };
 
         hrm_R: hrm_R {
