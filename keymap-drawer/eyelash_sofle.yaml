@@ -409,5 +409,3 @@ combos:
 - p: [29, 55, 28]
   k: {t: bw/msc, h: toggle}
   l: [default, bw/msc]
-- p: [55, 56]
-  k: $$mdi:apple-keyboard-option$$
