@@ -126,6 +126,11 @@
             key-positions = <29 55 28>;
             layers = <0 4>;
         };
+
+        alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <55 56>;
+        };
     };
 
     macros {
