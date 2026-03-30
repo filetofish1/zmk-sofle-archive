@@ -121,11 +121,6 @@
             key-positions = <29 55 28>;
             layers = <0 4>;
         };
-
-        alt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <55 56>;
-        };
     };
 
     macros {
@@ -136,32 +131,11 @@
             label = "BRACKET_SOFT";
         };
 
-        bracket_square: bracket_square {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LBKT &kp RBKT &kp LEFT>;
-            label = "BRACKET_SQUARE";
-        };
-
-        bracket_sqiggly: bracket_sqiggly {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LBRC &kp RBRC &kp LEFT>;
-            label = "BRACKET_SQIGGLY";
-        };
-
         bracket_quote: bracket_quote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DQT &kp DQT &kp LEFT_ARROW>;
             label = "BRACKET_QUOTE";
-        };
-
-        bracket_triangle: bracket_triangle {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LT &kp GT &kp LEFT>;
-            label = "BRACKET_TRIANGLE";
         };
     };
 
