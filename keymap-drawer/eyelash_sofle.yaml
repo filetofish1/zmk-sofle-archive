@@ -32,9 +32,9 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: G, h: '$$mdi:keyboard-tab$$'}
+  - G
   - $$mdi:arrow-left-bold$$
-  - {t: H, h: '$$mdi:keyboard-tab$$'}
+  - H
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: RIGHT GUI}
