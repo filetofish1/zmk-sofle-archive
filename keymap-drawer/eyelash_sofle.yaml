@@ -86,7 +86,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
@@ -99,7 +99,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - .
+  - {t: '=', s: +}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
@@ -112,7 +112,7 @@ layers:
   - +
   - PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '0', s: )}
+  - .
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -126,7 +126,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -393,10 +393,10 @@ layers:
 combos:
 - p: [29, 30]
   k: '&bracket_soft'
-  l: [f_keys]
+  l: [symbols_numbers]
 - p: [29, 28]
   k: '&bracket_quote'
-  l: [f_keys]
+  l: [symbols_numbers]
 - p: [21, 22]
   k: {t: '-', s: _}
   l: [default]
