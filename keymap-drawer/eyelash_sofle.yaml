@@ -57,8 +57,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - symbols_numbers
-  - '&mod_num'
   - $$mdi:apple-keyboard-shift$$
+  - '&mod_num'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-space$$
