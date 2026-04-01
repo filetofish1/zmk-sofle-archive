@@ -89,13 +89,13 @@
         bracket_soft {
             bindings = <&bracket_soft>;
             key-positions = <29 30>;
-            layers = <3>;
+            layers = <2>;
         };
 
         bracket_quote {
             bindings = <&bracket_quote>;
             key-positions = <29 28>;
-            layers = <3>;
+            layers = <2>;
         };
 
         minus {
@@ -114,12 +114,14 @@
             bindings = <&tog 1>;
             key-positions = <61 35 36>;
             layers = <0 1>;
+            slow-release;
         };
 
         tggle_browser {
             bindings = <&tog 4>;
             key-positions = <29 55 28>;
             layers = <0 4>;
+            slow-release;
         };
     };
 
@@ -158,10 +160,10 @@
         numpad_arrow {
             bindings = <
 &trans  &trans     &trans    &trans        &trans     &trans             &trans  &trans      &trans  &trans  &trans  &trans           &trans
-&trans  &trans     &trans    &kp UP_ARROW  &trans     &trans             &trans  &kp EQUAL   &kp N7  &kp N8  &kp N9  &trans           &trans
-&trans  &trans     &kp LEFT  &kp DOWN      &kp RIGHT  &trans             &trans  &kp PERIOD  &kp N4  &kp N5  &kp N6  &kp SQT          &trans
-&trans  &kp SLASH  &kp STAR  &kp MINUS     &kp PLUS   &kp PRINTSCREEN    &trans  &kp N0      &kp N1  &kp N2  &kp N3  &kp RIGHT_SHIFT  &trans
-&trans  &trans     &trans    &trans        &trans     &trans             &trans  &trans      &trans  &trans  &trans  &trans
+&trans  &trans     &trans    &kp UP_ARROW  &trans     &trans             &trans  &trans      &kp N7  &kp N8  &kp N9  &trans           &trans
+&trans  &trans     &kp LEFT  &kp DOWN      &kp RIGHT  &trans             &trans  &kp EQUAL   &kp N4  &kp N5  &kp N6  &kp SQT          &trans
+&trans  &kp SLASH  &kp STAR  &kp MINUS     &kp PLUS   &kp PRINTSCREEN    &trans  &kp PERIOD  &kp N1  &kp N2  &kp N3  &kp RIGHT_SHIFT  &trans
+&trans  &trans     &trans    &trans        &trans     &trans             &trans  &trans      &kp N0  &trans  &trans  &trans
             >;
 
             label = "npad/arrow";
