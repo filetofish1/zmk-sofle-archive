@@ -146,11 +146,11 @@
 
         default {
             bindings = <
-&kp CAPSLOCK      &kp N1               &kp N2             &kp N3             &kp N4                 &kp N5      &kp UP_ARROW     &kp N6         &kp N7                  &kp N8              &kp N9              &kp N0                        &kp GRAVE
+&trans            &trans               &trans             &trans             &trans                 &trans      &kp UP_ARROW     &trans         &trans                  &trans              &trans              &trans                        &trans
 &kp TAB           &kp Q                &kp W              &kp E              &kp R                  &kp T       &kp DOWN_ARROW   &kp Y          &kp U                   &kp I               &kp O               &kp P                         &kp DELETE
 &kp LEFT_CONTROL  &hrm_L LEFT_SHIFT A  &hrm_L LEFT_GUI S  &hrm_L LEFT_ALT D  &hrm_L LEFT_CONTROL F  &kp G       &kp LEFT_ARROW   &kp H          &hrm_R RIGHT_CONTROL J  &hrm_R RIGHT_ALT K  &hrm_R RIGHT_GUI L  &hrm_R RIGHT_SHIFT SEMICOLON  &kp ENTER
-&kp ESCAPE        &kp Z                &kp X              &kp C              &kp V                  &kp B       &kp RIGHT_ARROW  &kp N          &kp M                   &kp COMMA           &kp DOT             &kp FSLH                      &tog 4
-&kp C_MUTE        &none                &none              &mo 2              &kp LEFT_SHIFT         &mod_num    &kp ENTER        &kp BACKSPACE  &kp SPACE               &mod_func           &none               &none
+&kp ESCAPE        &kp Z                &kp X              &kp C              &kp V                  &kp B       &kp RIGHT_ARROW  &kp N          &kp M                   &kp COMMA           &kp DOT             &kp FSLH                      &kp CAPSLOCK
+&kp C_MUTE        &trans               &trans             &mo 2              &kp LEFT_SHIFT         &mod_num    &kp ENTER        &kp BACKSPACE  &kp SPACE               &mod_func           &trans              &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -159,11 +159,11 @@
 
         numpad_arrow {
             bindings = <
-&trans  &trans     &trans        &trans        &trans     &trans    &trans  &trans      &trans  &trans  &trans  &trans   &trans
-&trans  &trans     &trans        &kp UP_ARROW  &trans     &trans    &trans  &trans      &kp N7  &kp N8  &kp N9  &trans   &trans
-&trans  &trans     &kp LEFT      &kp DOWN      &kp RIGHT  &trans    &trans  &kp EQUAL   &kp N4  &kp N5  &kp N6  &kp SQT  &trans
-&trans  &kp SLASH  &kp ASTERISK  &kp MINUS     &kp PLUS   &trans    &trans  &kp PERIOD  &kp N1  &kp N2  &kp N3  &trans   &trans
-&trans  &trans     &trans        &trans        &trans     &trans    &trans  &trans      &kp N0  &trans  &trans  &trans
+&trans  &trans     &trans        &trans        &trans     &trans    &trans  &trans     &trans  &trans  &trans  &trans   &trans
+&trans  &trans     &trans        &kp UP_ARROW  &trans     &trans    &trans  &kp EQUAL  &kp N7  &kp N8  &kp N9  &trans   &trans
+&trans  &trans     &kp LEFT      &kp DOWN      &kp RIGHT  &trans    &trans  &kp DOT    &kp N4  &kp N5  &kp N6  &kp SQT  &trans
+&trans  &kp SLASH  &kp ASTERISK  &kp MINUS     &kp PLUS   &trans    &trans  &trans     &kp N1  &kp N2  &kp N3  &trans   &trans
+&trans  &trans     &trans        &trans        &trans     &trans    &trans  &trans     &kp N0  &trans  &trans  &trans
             >;
 
             label = "npad/arrow";
@@ -172,9 +172,9 @@
         symbols {
             bindings = <
 &trans  &trans           &trans           &trans    &trans      &trans             &trans  &trans     &trans         &trans        &trans                &trans                 &trans
-&trans  &kp N1           &kp N2           &kp N3    &kp N4      &kp N5             &trans  &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
+&trans  &trans           &trans           &trans    &trans      &trans             &trans  &trans     &trans         &trans        &trans                &trans                 &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN      &kp HASH  &kp DOLLAR  &kp PERCENT        &trans  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LBKT  &kp RBKT    &kp PRINTSCREEN    &trans  &trans     &kp MINUS      &kp PLUS      &kp EQUAL             &kp UNDER              &trans
+&trans  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LBKT  &kp RBKT    &kp PRINTSCREEN    &trans  &trans     &trans         &trans        &trans                &trans                 &trans
 &trans  &trans           &trans           &trans    &trans      &trans             &trans  &trans     &trans         &trans        &trans                &trans
             >;
 
