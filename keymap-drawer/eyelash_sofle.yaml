@@ -218,8 +218,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Z
-  - Ctl+V
   - Ctl+C
+  - Ctl+V
   - Ctl+Y
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -408,4 +408,4 @@ combos:
   l: [default, npad/arrow]
 - p: [29, 55, 28]
   k: {t: bw/msc, h: toggle}
-  l: [default, system]
+  l: [default, bw/msc]
