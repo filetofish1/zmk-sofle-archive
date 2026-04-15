@@ -183,11 +183,11 @@
 
         media_arrow {
             bindings = <
-&trans  &trans          &trans            &trans             &trans            &trans              &trans  &trans  &trans     &trans         &trans     &trans     &trans
-&trans  &kp C_AC_BACK   &kp C_AC_FORWARD  &kp C_VOLUME_DOWN  &kp C_VOL_UP      &kp C_PLAY_PAUSE    &trans  &trans  &kp RC(Z)  &kp RC(C)      &kp RC(V)  &kp RC(Y)  &trans
-&trans  &kp LEFT_SHIFT  &kp LEFT_ALT      &kp TAB            &kp LEFT_CONTROL  &trans              &trans  &trans  &kp LEFT   &kp DOWN       &kp UP     &kp RIGHT  &trans
-&trans  &trans          &trans            &trans             &trans            &trans              &trans  &trans  &kp END    &kp PAGE_DOWN  &kp PG_UP  &kp HOME   &trans
-&trans  &trans          &trans            &trans             &trans            &trans              &trans  &trans  &trans     &trans         &trans     &trans
+&trans  &trans          &trans            &trans             &trans            &trans              &trans  &trans     &trans    &trans         &trans     &trans     &trans
+&trans  &kp C_AC_BACK   &kp C_AC_FORWARD  &kp C_VOLUME_DOWN  &kp C_VOL_UP      &kp C_PLAY_PAUSE    &trans  &kp LC(V)  &trans    &kp UP_ARROW   &trans     &kp RC(Y)  &trans
+&trans  &kp LEFT_SHIFT  &kp LEFT_ALT      &kp TAB            &kp LEFT_CONTROL  &trans              &trans  &kp LC(C)  &kp LEFT  &kp DOWN       &kp UP     &kp LC(Z)  &trans
+&trans  &trans          &trans            &trans             &trans            &trans              &trans  &trans     &kp END   &kp PAGE_DOWN  &kp PG_UP  &kp HOME   &trans
+&trans  &trans          &trans            &trans             &trans            &trans              &trans  &trans     &trans    &trans         &trans     &trans
             >;
 
             label = "arw/media";
