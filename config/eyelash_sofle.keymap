@@ -192,8 +192,8 @@
             layers = <0>;
         };
 
-        escape {
-            bindings = <&kp ESCAPE>;
+        undo {
+            bindings = <&kp LC(Z)>;
             key-positions = <40 41>;
             layers = <0>;
         };
@@ -232,11 +232,11 @@
 
         numpad_arrow {
             bindings = <
-&trans  &trans            &trans         &trans        &trans     &trans                  &trans  &trans                 &trans  &trans  &trans  &trans             &trans
-&trans  &kp PRINTSCREEN   &bracket_soft  &kp UP_ARROW  &trans     &kp LEFT_BRACE          &trans  &kp RIGHT_BRACE        &kp N7  &kp N8  &kp N9  &kp DOUBLE_QUOTES  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT       &kp DOWN      &kp RIGHT  &kp LEFT_PARENTHESIS    &trans  &kp RIGHT_PARENTHESIS  &kp N4  &kp N5  &kp N6  &kp SQT            &trans
-&trans  &kp SLASH         &kp STAR       &kp MINUS     &kp PLUS   &kp LEFT_BRACKET        &trans  &kp RIGHT_BRACKET      &kp N1  &kp N2  &kp N3  &kp EQUAL          &trans
-&trans  &trans            &trans         &trans        &trans     &trans                  &trans  &trans                 &kp N0  &trans  &trans  &trans
+&trans  &trans            &trans           &trans        &trans         &trans                  &trans  &trans                 &trans  &trans  &trans  &trans             &trans
+&trans  &kp ESCAPE        &kp PRINTSCREEN  &kp UP_ARROW  &bracket_soft  &kp LEFT_BRACE          &trans  &kp RIGHT_BRACE        &kp N7  &kp N8  &kp N9  &kp DOUBLE_QUOTES  &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT         &kp DOWN      &kp RIGHT      &kp LEFT_PARENTHESIS    &trans  &kp RIGHT_PARENTHESIS  &kp N4  &kp N5  &kp N6  &kp SQT            &trans
+&trans  &kp SLASH         &kp STAR         &kp MINUS     &kp PLUS       &kp LEFT_BRACKET        &trans  &kp RIGHT_BRACKET      &kp N1  &kp N2  &kp N3  &kp EQUAL          &trans
+&trans  &trans            &trans           &trans        &trans         &trans                  &trans  &trans                 &kp N0  &trans  &trans  &trans
             >;
 
             label = "npad/arrow";
@@ -244,10 +244,10 @@
 
         symbols_functions {
             bindings = <
-&trans  &trans       &trans     &trans    &trans      &trans              &trans  &trans         &trans    &trans    &trans     &trans   &trans
-&trans  &kp PERCENT  &kp CARET  &kp AMPS  &kp ASTRK   &trans              &trans  &kp GRAVE      &trans    &kp UP    &trans     &kp F11  &trans
-&trans  &kp EXCL     &kp AT     &kp HASH  &kp DOLLAR  &kp LEFT_CONTROL    &trans  &kp BACKSLASH  &kp LEFT  &kp DOWN  &kp RIGHT  &kp F12  &trans
-&trans  &kp F1       &kp F2     &kp F3    &kp F4      &kp F5              &trans  &kp F6         &kp F7    &kp F8    &kp F9     &kp F10  &trans
+&trans  &trans       &trans     &trans    &trans      &trans              &trans  &trans         &trans    &trans    &trans     &trans      &trans
+&trans  &kp PERCENT  &kp CARET  &kp AMPS  &kp ASTRK   &trans              &trans  &kp GRAVE      &kp F11   &kp UP    &kp F12    &kp ESCAPE  &trans
+&trans  &kp EXCL     &kp AT     &kp HASH  &kp DOLLAR  &kp LEFT_CONTROL    &trans  &kp BACKSLASH  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER   &trans
+&trans  &kp F1       &kp F2     &kp F3    &kp F4      &kp F5              &trans  &kp F6         &kp F7    &kp F8    &kp F9     &kp F10     &trans
 &trans  &trans       &trans     &trans    &trans      &trans              &trans  &trans         &trans    &trans    &trans     &trans
             >;
 
