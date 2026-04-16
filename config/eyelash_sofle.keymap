@@ -173,6 +173,17 @@
             key-positions = <28 29>;
             layers = <1>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <36 37>;
+            layers = <0>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <40 41>;
+        };
     };
 
     macros {
@@ -191,7 +202,7 @@
             bindings = <
 &trans      &trans               &trans             &trans                        &trans                      &trans      &trans  &trans         &trans                       &trans              &trans              &trans                        &trans
 &trans      &kp Q                &kp W              &kp E                         &kp R                       &kp T       &trans  &kp Y          &kp U                        &kp I               &kp O               &kp P                         &trans
-&kp ESCAPE  &hrm_L LEFT_SHIFT A  &hrm_L LEFT_GUI S  &hrm_L LEFT_ALT D             &hrm_ctrl_L LEFT_CONTROL F  &kp G       &trans  &kp H          &hrm_ctrl_R RIGHT_CONTROL J  &hrm_R RIGHT_ALT K  &hrm_R RIGHT_GUI L  &hrm_R RIGHT_SHIFT SEMICOLON  &kp ENTER
+&trans      &hrm_L LEFT_SHIFT A  &hrm_L LEFT_GUI S  &hrm_L LEFT_ALT D             &hrm_ctrl_L LEFT_CONTROL F  &kp G       &trans  &kp H          &hrm_ctrl_R RIGHT_CONTROL J  &hrm_R RIGHT_ALT K  &hrm_R RIGHT_GUI L  &hrm_R RIGHT_SHIFT SEMICOLON  &trans
 &trans      &kp Z                &kp X              &kp C                         &kp V                       &kp B       &trans  &kp N          &kp M                        &kp COMMA           &kp DOT             &kp FSLH                      &trans
 &kp C_MUTE  &trans               &trans             &hrm_ctrl_R LEFT_CONTROL TAB  &kp LEFT_SHIFT              &mod_num    &trans  &kp BACKSPACE  &kp SPACE                    &mod_symfunc        &trans              &trans
             >;
@@ -202,11 +213,11 @@
 
         numpad_arrow {
             bindings = <
-&trans            &trans            &trans         &trans             &trans           &trans       &trans  &trans         &trans  &trans  &trans  &trans             &trans
-&trans            &kp PRINTSCREEN   &bracket_soft  &kp UP_ARROW       &kp PLUS         &kp MINUS    &trans  &kp GRAVE      &kp N7  &kp N8  &kp N9  &kp DOUBLE_QUOTES  &trans
-&kp LEFT_CONTROL  &kp C_PLAY_PAUSE  &kp LEFT       &kp DOWN           &kp RIGHT        &kp STAR     &trans  &kp BACKSLASH  &kp N4  &kp N5  &kp N6  &kp SQT            &trans
-&trans            &kp C_PREVIOUS    &kp C_NEXT     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp SLASH    &trans  &trans         &kp N1  &kp N2  &kp N3  &kp EQUAL          &trans
-&trans            &trans            &trans         &trans             &trans           &trans       &trans  &trans         &kp N0  &trans  &trans  &trans
+&trans  &trans            &trans         &trans        &trans     &trans       &trans  &trans         &trans  &trans  &trans  &trans             &trans
+&trans  &kp PRINTSCREEN   &bracket_soft  &kp UP_ARROW  &kp PLUS   &kp MINUS    &trans  &kp GRAVE      &kp N7  &kp N8  &kp N9  &kp DOUBLE_QUOTES  &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT       &kp DOWN      &kp RIGHT  &kp STAR     &trans  &kp BACKSLASH  &kp N4  &kp N5  &kp N6  &kp SQT            &trans
+&trans  &trans            &trans         &trans        &trans     &kp SLASH    &trans  &trans         &kp N1  &kp N2  &kp N3  &kp EQUAL          &trans
+&trans  &trans            &trans         &trans        &trans     &trans       &trans  &trans         &kp N0  &trans  &trans  &trans
             >;
 
             label = "npad/arrow";
@@ -226,11 +237,11 @@
 
         system {
             bindings = <
-&trans  &trans          &trans        &trans        &trans        &trans    &trans  &trans  &trans           &trans           &trans                            &trans           &trans
-&trans  &bt BT_SEL 3    &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans    &trans  &trans  &trans           &trans           &rgb_ug RGB_BRD                   &rgb_ug RGB_BRI  &trans
-&trans  &bt BT_SEL 4    &trans        &out OUT_USB  &out OUT_BLE  &trans    &trans  &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_EFR                   &rgb_ug RGB_EFF  &trans
-&trans  &bt BT_CLR_ALL  &trans        &trans        &bt BT_CLR    &trans    &trans  &trans  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_COLOR_HSB(10,100,50)  &rgb_ug RGB_SAI  &trans
-&trans  &trans          &trans        &trans        &trans        &trans    &trans  &trans  &trans           &trans           &trans                            &trans
+&trans  &trans          &trans        &trans        &trans        &trans    &trans  &trans            &trans             &trans           &trans           &trans           &trans
+&trans  &bt BT_SEL 3    &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans    &trans  &trans            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans           &trans           &trans
+&trans  &bt BT_SEL 4    &trans        &out OUT_USB  &out OUT_BLE  &trans    &trans  &kp C_PLAY_PAUSE  &rgb_ug RGB_OFF    &rgb_ug RGB_ON   &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans
+&trans  &bt BT_CLR_ALL  &trans        &trans        &bt BT_CLR    &trans    &trans  &trans            &kp C_PREV         &kp C_NEXT       &trans           &trans           &trans
+&trans  &trans          &trans        &trans        &trans        &trans    &trans  &trans            &trans             &trans           &trans           &trans
             >;
 
             label = "system";
