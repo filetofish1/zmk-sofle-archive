@@ -110,13 +110,6 @@
             layers = <0>;
         };
 
-        tggle_numpad {
-            bindings = <&tog 1>;
-            key-positions = <61 35 36>;
-            layers = <0 1>;
-            slow-release;
-        };
-
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <41 42>;
@@ -131,7 +124,7 @@
 
         caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <50 49>;
+            key-positions = <14 15>;
             layers = <0>;
         };
 
@@ -139,13 +132,6 @@
             bindings = <&kp DELETE>;
             key-positions = <24 23>;
             layers = <0>;
-        };
-
-        tggle_sys {
-            bindings = <&tog 3>;
-            key-positions = <28 54 29>;
-            layers = <0 3>;
-            slow-release;
         };
     };
 
@@ -230,5 +216,12 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        system_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
 };
