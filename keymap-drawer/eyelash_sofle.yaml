@@ -80,10 +80,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-esc$$
   - PRINTSCREEN
-  - '&bracket_soft'
   - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&bracket_soft'
   - '{'
   - {t: '$$mdi:transfer$$', type: trans}
   - '}'
@@ -152,10 +152,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - F11
+  - $$mdi:arrow-up-bold$$
+  - F12
+  - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
@@ -168,7 +168,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - F12
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
@@ -295,7 +295,7 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [default]
 - p: [40, 41]
-  k: $$mdi:keyboard-esc$$
+  k: Ctl+Z
   l: [default]
 - p: [27, 28]
   k: $$mdi:apple-keyboard-control$$
