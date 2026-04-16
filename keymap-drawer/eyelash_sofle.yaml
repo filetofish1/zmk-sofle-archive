@@ -80,10 +80,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - PRINTSCREEN
-  - $$mdi:volume-low$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
-  - $$mdi:volume-high$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - '{'
   - {t: '$$mdi:transfer$$', type: trans}
   - '}'
@@ -92,8 +92,8 @@ layers:
   - {t: '9', s: (}
   - '"'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - PLAY PAUSE
+  - $$mdi:apple-keyboard-control$$
+  - PRINTSCREEN
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -145,23 +145,23 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $
   - '%'
   - ^
   - '&'
+  - AC BACK
+  - AC FORWARD
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PLAY PAUSE
+  - $$mdi:volume-low$$
   - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:volume-high$$
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
   - '!'
   - '@'
   - '#'
-  - $$mdi:apple-keyboard-control$$
+  - $
   - F11
   - {t: '$$mdi:transfer$$', type: trans}
   - F12
@@ -328,10 +328,10 @@ layers:
 combos:
 - p: [29, 30]
   k: '&bracket_soft'
-  l: [sym_fnc]
+  l: [npad/arrow]
 - p: [34, 35]
   k: '&bracket_quote'
-  l: [sym_fnc]
+  l: [npad/arrow]
 - p: [21, 22]
   k: {t: '-', s: _}
   l: [default]
