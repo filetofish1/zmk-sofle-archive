@@ -62,10 +62,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', h: sym/fnc}
+  - {t: '$$mdi:keyboard-return$$', h: symbols}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  npad/arrow:
+  numpad:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  sym/fnc:
+  symbols:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -275,22 +275,22 @@ combos:
   l: [default]
 - p: [14, 15]
   k: $$mdi:apple-keyboard-caps$$
-  l: [npad/arrow]
+  l: [numpad]
 - p: [24, 23]
   k: $$mdi:backspace-reverse-outline$$
   l: [default]
 - p: [16, 17]
   k: PgUp
-  l: [npad/arrow]
+  l: [numpad]
 - p: [29, 30]
   k: PgDn
-  l: [npad/arrow]
+  l: [numpad]
 - p: [15, 16]
   k: HOME
-  l: [npad/arrow]
+  l: [numpad]
 - p: [28, 29]
   k: END
-  l: [npad/arrow]
+  l: [numpad]
 - p: [36, 37]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [default]
@@ -299,4 +299,4 @@ combos:
   l: [default]
 - p: [27, 28]
   k: $$mdi:apple-keyboard-control$$
-  l: [sym/fnc]
+  l: [symbols]
