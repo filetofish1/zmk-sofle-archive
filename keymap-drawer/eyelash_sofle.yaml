@@ -350,9 +350,9 @@ combos:
 - p: [29, 30]
   k: PgDn
   l: [npad/arrow]
-- p: [14, 15]
+- p: [15, 16]
   k: HOME
   l: [npad/arrow]
-- p: [27, 28]
+- p: [28, 29]
   k: END
   l: [npad/arrow]
