@@ -68,7 +68,7 @@
             #binding-cells = <0>;
             bindings = <&mo 1>, <&tog 1>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
         };
 
         mod_arrow: mod_arrow {
@@ -77,7 +77,7 @@
             #binding-cells = <0>;
             bindings = <&mo 3>, <&tog 3>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
         };
 
         /* Shift variants (shorter tapping term for quick capitalization) */
