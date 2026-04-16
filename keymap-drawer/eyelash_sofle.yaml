@@ -155,7 +155,7 @@ layers:
   - F11
   - $$mdi:arrow-up-bold$$
   - F12
-  - $$mdi:keyboard-esc$$
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
