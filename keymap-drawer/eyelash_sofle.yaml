@@ -338,21 +338,15 @@ combos:
 - p: [22, 23]
   k: {t: '=', s: +}
   l: [default]
-- p: [61, 35, 36]
-  k: {t: npad/arrow, h: toggle}
-  l: [default, npad/arrow]
 - p: [41, 42]
   k: Ctl+C
   l: [default]
 - p: [42, 43]
   k: Ctl+V
   l: [default]
-- p: [50, 49]
+- p: [14, 15]
   k: $$mdi:apple-keyboard-caps$$
   l: [default]
 - p: [24, 23]
   k: $$mdi:backspace-reverse-outline$$
   l: [default]
-- p: [28, 54, 29]
-  k: {t: system, h: toggle}
-  l: [default, system]
