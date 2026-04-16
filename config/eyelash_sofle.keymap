@@ -239,7 +239,7 @@
 &trans  &trans            &trans           &trans        &trans         &trans                  &trans  &trans                 &kp N0  &trans  &trans  &trans
             >;
 
-            label = "npad/arrow";
+            label = "numpad";
         };
 
         symbols_functions {
@@ -251,7 +251,7 @@
 &trans  &trans       &trans     &trans    &trans      &trans              &trans  &trans         &trans    &trans    &trans     &trans
             >;
 
-            label = "sym/fnc";
+            label = "symbols";
         };
 
         system {
