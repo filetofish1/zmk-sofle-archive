@@ -294,6 +294,9 @@ combos:
 - p: [36, 37]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [default]
-- p: [14, 15]
+- p: [40, 41]
   k: $$mdi:keyboard-esc$$
   l: [default]
+- p: [27, 28]
+  k: $$mdi:apple-keyboard-control$$
+  l: [sym/fnc]
