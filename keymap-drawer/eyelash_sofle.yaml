@@ -148,8 +148,8 @@ layers:
   - '%'
   - ^
   - '&'
-  - AC BACK
-  - AC FORWARD
+  - PREVIOUS
+  - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
   - PLAY PAUSE
   - $$mdi:volume-low$$
