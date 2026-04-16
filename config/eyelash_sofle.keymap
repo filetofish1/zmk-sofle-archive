@@ -164,13 +164,13 @@
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
             layers = <1>;
         };
 
         end {
             bindings = <&kp END>;
-            key-positions = <27 28>;
+            key-positions = <28 29>;
             layers = <1>;
         };
     };
