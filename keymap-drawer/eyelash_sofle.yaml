@@ -211,9 +211,6 @@ combos:
 - p: [14, 15]
   k: $$mdi:apple-keyboard-caps$$
   l: [numpad]
-- p: [24, 23]
-  k: $$mdi:backspace-reverse-outline$$
-  l: [default]
 - p: [17, 30]
   k: PgUp
   l: [numpad]
@@ -244,6 +241,3 @@ combos:
 - p: [57, 59]
   k: system
   l: [default, system]
-- p: [56, 57]
-  k: $$mdi:apple-keyboard-control$$
-  l: [default]
