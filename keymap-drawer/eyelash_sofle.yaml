@@ -57,7 +57,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&mod_num'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -246,4 +246,7 @@ combos:
   l: [default, system]
 - p: [56, 57]
   k: $$mdi:apple-keyboard-control$$
+  l: [default]
+- p: [49, 50]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [default]
