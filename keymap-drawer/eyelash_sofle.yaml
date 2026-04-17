@@ -279,24 +279,18 @@ combos:
 - p: [24, 23]
   k: $$mdi:backspace-reverse-outline$$
   l: [default]
-- p: [16, 17]
+- p: [17, 30]
   k: PgUp
   l: [numpad]
-- p: [29, 30]
+- p: [30, 43]
   k: PgDn
   l: [numpad]
-- p: [15, 16]
+- p: [16, 29]
   k: HOME
   l: [numpad]
-- p: [28, 29]
+- p: [29, 42]
   k: END
   l: [numpad]
-- p: [36, 37]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [default]
 - p: [40, 41]
   k: Ctl+Z
   l: [default]
-- p: [27, 28]
-  k: $$mdi:apple-keyboard-control$$
-  l: [symbols]
