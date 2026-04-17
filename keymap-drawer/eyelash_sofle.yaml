@@ -57,7 +57,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
   - '&mod_num'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -220,22 +220,22 @@ combos:
 - p: [40, 41]
   k: Ctl+Z
   l: [default]
-- p: [21, 34]
+- p: [16, 15]
   k: (
-  l: [numpad]
-- p: [22, 35]
+  l: [default]
+- p: [16, 17]
   k: )
-  l: [numpad]
-- p: [34, 47]
+  l: [default]
+- p: [21, 34]
   k: {t: '[', s: '{'}
   l: [numpad]
-- p: [35, 48]
+- p: [22, 35]
   k: {t: ']', s: '}'}
   l: [numpad]
-- p: [23, 36]
+- p: [34, 47]
   k: '{'
   l: [numpad]
-- p: [24, 37]
+- p: [35, 48]
   k: '}'
   l: [numpad]
 - p: [57, 59]
