@@ -243,11 +243,11 @@
 
         default {
             bindings = <
-&trans  &trans             &trans             &trans               &trans                      &trans            &trans  &trans         &trans                       &trans                &trans              &trans                      &trans
-&trans  &kp Q              &kp W              &kp E                &kp R                       &kp T             &trans  &kp Y          &kp U                        &kp I                 &kp O               &kp P                       &trans
-&trans  &hrm_L LEFT_GUI A  &hrm_L LEFT_ALT S  &hrm_L LEFT_SHIFT D  &hrm_ctrl_L LEFT_CONTROL F  &kp G             &trans  &kp H          &hrm_ctrl_R RIGHT_CONTROL J  &hrm_R RIGHT_SHIFT K  &hrm_R RIGHT_ALT L  &hrm_R RIGHT_GUI SEMICOLON  &trans
-&trans  &kp Z              &kp X              &kp C                &kp V                       &kp B             &trans  &kp N          &kp M                        &kp COMMA             &kp DOT             &kp ENTER                   &trans
-&trans  &trans             &trans             &trans               &shift_tab LEFT_SHIFT TAB   &layer_control    &trans  &kp BACKSPACE  &kp SPACE                    &trans                &trans              &trans
+&trans  &trans             &trans             &trans               &trans                      &trans      &trans  &trans         &trans                       &trans                &trans              &trans                      &trans
+&trans  &kp Q              &kp W              &kp E                &kp R                       &kp T       &trans  &kp Y          &kp U                        &kp I                 &kp O               &kp P                       &trans
+&trans  &hrm_L LEFT_GUI A  &hrm_L LEFT_ALT S  &hrm_L LEFT_SHIFT D  &hrm_ctrl_L LEFT_CONTROL F  &kp G       &trans  &kp H          &hrm_ctrl_R RIGHT_CONTROL J  &hrm_R RIGHT_SHIFT K  &hrm_R RIGHT_ALT L  &hrm_R RIGHT_GUI SEMICOLON  &trans
+&trans  &kp Z              &kp X              &kp C                &kp V                       &kp B       &trans  &kp N          &kp M                        &kp COMMA             &kp DOT             &kp ENTER                   &trans
+&trans  &trans             &trans             &trans               &shift_tab LEFT_SHIFT TAB   &mod_num    &trans  &kp BACKSPACE  &kp SPACE                    &trans                &trans              &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
