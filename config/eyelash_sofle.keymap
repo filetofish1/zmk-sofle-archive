@@ -231,6 +231,12 @@
             layers = <0 2>;
             require-prior-idle-ms = <300>;
         };
+
+        bracket_pair {
+            bindings = <&bracket_soft>;
+            key-positions = <15 16 17>;
+            layers = <0>;
+        };
     };
 
     macros {
