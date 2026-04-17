@@ -160,12 +160,6 @@
             layers = <1>;
         };
 
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <24 23>;
-            layers = <0>;
-        };
-
         page_up {
             bindings = <&kp PAGE_UP>;
             key-positions = <17 30>;
@@ -225,12 +219,6 @@
             key-positions = <57 59>;
             layers = <0 2>;
             require-prior-idle-ms = <300>;
-        };
-
-        thumb_control {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <56 57>;
-            layers = <0>;
         };
     };
 
