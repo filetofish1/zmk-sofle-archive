@@ -164,44 +164,32 @@
 
         page_up {
             bindings = <&kp PAGE_UP>;
-            key-positions = <16 17>;
+            key-positions = <17 30>;
             layers = <1>;
         };
 
         page_down {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <29 30>;
+            key-positions = <30 43>;
             layers = <1>;
         };
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <15 16>;
+            key-positions = <16 29>;
             layers = <1>;
         };
 
         end {
             bindings = <&kp END>;
-            key-positions = <28 29>;
+            key-positions = <29 42>;
             layers = <1>;
-        };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <36 37>;
-            layers = <0>;
         };
 
         undo {
             bindings = <&kp LC(Z)>;
             key-positions = <40 41>;
             layers = <0>;
-        };
-
-        ctrl_symb {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <27 28>;
-            layers = <2>;
         };
     };
 
