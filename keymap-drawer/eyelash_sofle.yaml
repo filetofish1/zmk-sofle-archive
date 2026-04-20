@@ -86,7 +86,7 @@ layers:
   - '!'
   - '@'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&bracket_soft'
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
@@ -241,6 +241,3 @@ combos:
 - p: [57, 59]
   k: system
   l: [default, system]
-- p: [15, 16, 17]
-  k: '&bracket_soft'
-  l: [default]
