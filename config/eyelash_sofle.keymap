@@ -145,24 +145,28 @@
             bindings = <&kp MINUS>;
             key-positions = <21 22>;
             layers = <0>;
+            require-prior-idle-ms = <200>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <22 23>;
             layers = <0>;
+            require-prior-idle-ms = <200>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <41 42>;
             layers = <0>;
+            require-prior-idle-ms = <200>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
             key-positions = <42 43>;
             layers = <0>;
+            require-prior-idle-ms = <200>;
         };
 
         caps {
@@ -187,18 +191,21 @@
             bindings = <&kp LC(Z)>;
             key-positions = <40 41>;
             layers = <0>;
+            require-prior-idle-ms = <200>;
         };
 
         parentheses_1 {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <16 15>;
             layers = <0>;
+            require-prior-idle-ms = <200>;
         };
 
         parentheses_2 {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <16 17>;
             layers = <0>;
+            require-prior-idle-ms = <200>;
         };
 
         bracket_1 {
