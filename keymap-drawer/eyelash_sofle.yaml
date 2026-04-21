@@ -99,7 +99,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - '#'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: /, s: '?'}
+  - '?'
   - {t: '4', h: '$$mdi:apple-keyboard-control$$', s: $}
   - {t: '5', h: '$$mdi:apple-keyboard-shift$$', s: '%'}
   - {t: '6', h: '$$mdi:apple-keyboard-option$$', s: ^}
@@ -116,7 +116,7 @@ layers:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - '?'
+  - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
