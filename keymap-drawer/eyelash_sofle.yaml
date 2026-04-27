@@ -241,3 +241,9 @@ combos:
 - p: [57, 59]
   k: system
   l: [default, system]
+- p: [40, 42]
+  k: Ctl+X
+  l: [default]
+- p: [23, 24]
+  k: $$mdi:backspace-reverse-outline$$
+  l: [default]
