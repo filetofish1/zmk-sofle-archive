@@ -218,6 +218,20 @@
             require-prior-idle-ms = <350>;
             slow-release;
         };
+
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <40 42>;
+            require-prior-idle-ms = <350>;
+            layers = <0>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <23 24>;
+            require-prior-idle-ms = <350>;
+            layers = <0>;
+        };
     };
 
     macros {
