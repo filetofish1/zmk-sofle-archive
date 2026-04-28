@@ -166,19 +166,24 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <14 15>;
             layers = <1>;
-            timeout-ms = <30>;
+            timeout-ms = <18>;
+            require-prior-idle-ms = <50>;
         };
 
         page_up {
             bindings = <&kp PAGE_UP>;
             key-positions = <17 30>;
             layers = <1>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         page_down {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <30 43>;
             layers = <1>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         undo {
@@ -209,32 +214,41 @@
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <21 34>;
             layers = <1>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         bracket_2 {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <22 35>;
             layers = <1>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         brace_1 {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <34 47>;
             layers = <1>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         brace_2 {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <35 48>;
             layers = <1>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         cond_sys_layer {
             bindings = <&mo 2>;
             key-positions = <57 59>;
             layers = <0 2>;
-            require-prior-idle-ms = <350>;
+            require-prior-idle-ms = <150>;
             slow-release;
+            timeout-ms = <50>;
         };
 
         cut {
@@ -268,6 +282,22 @@
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
+
+        to_1 {
+            bindings = <&to 1>;
+            key-positions = <37 50>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        to_0 {
+            bindings = <&to 0>;
+            key-positions = <37 50>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <1>;
+        };
     };
 
     macros {
@@ -299,8 +329,8 @@
             bindings = <
 &trans  &trans                          &trans           &trans        &trans           &trans        &trans  &trans  &trans                        &trans               &trans               &trans                         &trans
 &trans  &kp ESCAPE                      &kp PRINTSCREEN  &kp UP_ARROW  &kp EXCLAMATION  &kp AT        &trans  &trans  &kp N7                        &kp N8               &kp N9               &kp DOUBLE_QUOTES              &trans
-&trans  &kp DELETE                      &kp LEFT         &kp DOWN      &kp RIGHT        &kp HASH      &trans  &to 1   &hrm_ctrl_R RIGHT_CONTROL N4  &hrm_R RIGHT_ALT N5  &hrm_R RIGHT_GUI N6  &hrm_R RIGHT_SHIFT APOSTROPHE  &trans
-&trans  &hrm_ctrl_R LEFT_CONTROL ASTRK  &kp AMPERSAND    &kp CARET     &kp PERCENT      &kp DOLLAR    &trans  &to 0   &kp N1                        &kp N2               &kp N3               &kp ENTER                      &trans
+&trans  &kp DELETE                      &kp LEFT         &kp DOWN      &kp RIGHT        &kp HASH      &trans  &trans  &hrm_ctrl_R RIGHT_CONTROL N4  &hrm_R RIGHT_ALT N5  &hrm_R RIGHT_GUI N6  &hrm_R RIGHT_SHIFT APOSTROPHE  &trans
+&trans  &hrm_ctrl_R LEFT_CONTROL ASTRK  &kp AMPERSAND    &kp CARET     &kp PERCENT      &kp DOLLAR    &trans  &trans  &kp N1                        &kp N2               &kp N3               &kp ENTER                      &trans
 &trans  &trans                          &trans           &trans        &trans           &trans        &trans  &trans  &kp N0                        &trans               &trans               &trans
             >;
 
