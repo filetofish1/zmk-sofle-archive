@@ -668,8 +668,10 @@ rect.held, rect.combo.held {
 <text x="140" y="210" class="combo tap">Ctl+X</text>
 </g>
 <g class="combo combopos-9">
-<rect rx="6" ry="6" x="798" y="201" width="28" height="26" class="combo"/>
-<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="803" y="205" height="18" width="18.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
+<path d="M728,203 l-37,0" class="combo"/>
+<path d="M728,203 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="714" y="190" width="28" height="26" class="combo"/>
+<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="719" y="194" height="18" width="18.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
 </g>
 <g class="combo enter combopos-10">
 <rect rx="6" ry="6" x="742" y="186" width="28" height="26" class="combo enter"/>
