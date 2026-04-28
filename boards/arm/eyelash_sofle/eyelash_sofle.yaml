@@ -18,3 +18,5 @@ supported:
   - gpio
   - i2c
   - spi
+  zmk:
+    compat-tier: 1
