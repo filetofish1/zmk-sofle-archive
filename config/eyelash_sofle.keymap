@@ -114,6 +114,16 @@
             quick-tap-ms = <150>;
         };
 
+        layer_toggle: layer_toggle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TOGGLE";
+            bindings = <&to>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
         /* Shift variants (shorter tapping term for quick capitalization) */
     };
 
@@ -261,11 +271,11 @@
 
         numpad_arrow {
             bindings = <
-&trans  &trans                          &trans           &trans        &trans           &trans        &trans  &trans         &trans                        &trans               &trans               &trans                         &trans
-&trans  &kp ESCAPE                      &kp PRINTSCREEN  &kp UP_ARROW  &kp EXCLAMATION  &kp AT        &trans  &bracket_soft  &kp N7                        &kp N8               &kp N9               &kp DOUBLE_QUOTES              &trans
-&trans  &kp DELETE                      &kp LEFT         &kp DOWN      &kp RIGHT        &kp HASH      &trans  &kp QUESTION   &hrm_ctrl_R RIGHT_CONTROL N4  &hrm_R RIGHT_ALT N5  &hrm_R RIGHT_GUI N6  &hrm_R RIGHT_SHIFT APOSTROPHE  &trans
-&trans  &hrm_ctrl_R LEFT_CONTROL ASTRK  &kp AMPERSAND    &kp CARET     &kp PERCENT      &kp DOLLAR    &trans  &tog 1         &kp N1                        &kp N2               &kp N3               &kp SLASH                      &trans
-&trans  &trans                          &trans           &trans        &trans           &trans        &trans  &trans         &kp N0                        &trans               &trans               &trans
+&trans  &trans                          &trans           &trans        &trans           &trans        &trans  &trans             &trans                        &trans               &trans               &trans                         &trans
+&trans  &kp ESCAPE                      &kp PRINTSCREEN  &kp UP_ARROW  &kp EXCLAMATION  &kp AT        &trans  &bracket_soft      &kp N7                        &kp N8               &kp N9               &kp DOUBLE_QUOTES              &trans
+&trans  &kp DELETE                      &kp LEFT         &kp DOWN      &kp RIGHT        &kp HASH      &trans  &kp QUESTION       &hrm_ctrl_R RIGHT_CONTROL N4  &hrm_R RIGHT_ALT N5  &hrm_R RIGHT_GUI N6  &hrm_R RIGHT_SHIFT APOSTROPHE  &trans
+&trans  &hrm_ctrl_R LEFT_CONTROL ASTRK  &kp AMPERSAND    &kp CARET     &kp PERCENT      &kp DOLLAR    &trans  &layer_toggle 0 1  &kp N1                        &kp N2               &kp N3               &kp SLASH                      &trans
+&trans  &trans                          &trans           &trans        &trans           &trans        &trans  &trans             &kp N0                        &trans               &trans               &trans
             >;
 
             label = "numpad";
