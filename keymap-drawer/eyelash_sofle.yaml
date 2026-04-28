@@ -51,7 +51,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -99,7 +99,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - '#'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '?'
+  - {t: numpad, h: toggle}
   - {t: '4', h: '$$mdi:apple-keyboard-control$$', s: $}
   - {t: '5', h: '$$mdi:apple-keyboard-option$$', s: '%'}
   - {t: '6', h: RIGHT GUI, s: ^}
@@ -112,11 +112,11 @@ layers:
   - '%'
   - $
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: numpad, h: default}
+  - {t: default, h: toggle}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - {t: /, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
