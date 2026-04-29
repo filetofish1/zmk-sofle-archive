@@ -369,14 +369,6 @@
             layers = <1>;
         };
 
-        printscr {
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <16 29>;
-            timeout-ms = <30>;
-            layers = <1>;
-            require-prior-idle-ms = <50>;
-        };
-
         to_2 {
             bindings = <&to 2>;
             key-positions = <37 50>;
