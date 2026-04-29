@@ -151,7 +151,7 @@
             key-positions = <41 42>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <18>;
+            timeout-ms = <30>;
         };
 
         paste {
@@ -159,15 +159,15 @@
             key-positions = <42 43>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <18>;
+            timeout-ms = <30>;
         };
 
         caps {
             bindings = <&kp CAPSLOCK>;
             key-positions = <14 15>;
             layers = <1>;
-            timeout-ms = <18>;
-            require-prior-idle-ms = <50>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
         };
 
         page_up {
@@ -362,14 +362,6 @@
             require-prior-idle-ms = <50>;
             layers = <0>;
         };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <56 57>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
     };
 
     macros {
@@ -386,11 +378,11 @@
 
         default {
             bindings = <
-&trans  &trans                  &trans             &trans             &trans                      &trans                 &trans  &trans         &trans                       &trans              &trans              &trans                        &trans
-&trans  &kp Q                   &kp W              &kp E              &kp R                       &kp T                  &trans  &kp Y          &kp U                        &kp I               &kp O               &kp P                         &trans
-&trans  &hrm_L LEFT_SHIFT A     &hrm_L LEFT_GUI S  &hrm_L LEFT_ALT D  &hrm_ctrl_L LEFT_CONTROL F  &kp G                  &trans  &kp H          &hrm_ctrl_R RIGHT_CONTROL J  &hrm_R RIGHT_ALT K  &hrm_R RIGHT_GUI L  &hrm_R RIGHT_SHIFT SEMICOLON  &trans
-&trans  &z_ctrl LEFT_CONTROL Z  &kp X              &kp C              &kp V                       &kp B                  &trans  &kp N          &kp M                        &kp COMMA           &kp DOT             &kp SLASH                     &trans
-&trans  &trans                  &trans             &trans             &kp LEFT_SHIFT              &tab_layer1 1 ENTER    &trans  &kp BACKSPACE  &kp SPACE                    &trans              &trans              &trans
+&trans  &trans                  &trans             &trans             &trans                      &trans               &trans  &trans         &trans                       &trans              &trans              &trans                        &trans
+&trans  &kp Q                   &kp W              &kp E              &kp R                       &kp T                &trans  &kp Y          &kp U                        &kp I               &kp O               &kp P                         &trans
+&trans  &hrm_L LEFT_SHIFT A     &hrm_L LEFT_GUI S  &hrm_L LEFT_ALT D  &hrm_ctrl_L LEFT_CONTROL F  &kp G                &trans  &kp H          &hrm_ctrl_R RIGHT_CONTROL J  &hrm_R RIGHT_ALT K  &hrm_R RIGHT_GUI L  &hrm_R RIGHT_SHIFT SEMICOLON  &trans
+&trans  &z_ctrl LEFT_CONTROL Z  &kp X              &kp C              &kp V                       &kp B                &trans  &kp N          &kp M                        &kp COMMA           &kp DOT             &kp SLASH                     &trans
+&trans  &trans                  &trans             &trans             &kp LEFT_SHIFT              &tab_layer1 1 TAB    &trans  &kp BACKSPACE  &kp SPACE                    &trans              &trans              &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
