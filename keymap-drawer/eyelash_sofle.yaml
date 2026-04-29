@@ -285,9 +285,6 @@ combos:
 - p: [15, 17]
   k: $$mdi:volume-off$$
   l: [numpad]
-- p: [16, 29]
-  k: PRINTSCREEN
-  l: [numpad]
 - p: [37, 50]
   k: {t: system, h: toggle}
   l: [default]
