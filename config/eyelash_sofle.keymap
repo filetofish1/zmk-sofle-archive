@@ -191,7 +191,7 @@
             key-positions = <40 41>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <18>;
+            timeout-ms = <30>;
         };
 
         parentheses_1 {
@@ -256,7 +256,7 @@
             key-positions = <40 42>;
             require-prior-idle-ms = <150>;
             layers = <0>;
-            timeout-ms = <18>;
+            timeout-ms = <30>;
         };
 
         delete {
@@ -269,7 +269,7 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <48 49>;
+            key-positions = <48 47>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
             layers = <0>;
@@ -297,6 +297,70 @@
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
             layers = <1>;
+        };
+
+        exlam {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <15 28>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        at {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <16 29>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <17 30>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <18 31>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <20 33>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <21 34>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <22 35>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        asterix {
+            bindings = <&kp ASTERISK>;
+            key-positions = <23 36>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
         };
     };
 
