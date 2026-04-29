@@ -245,9 +245,7 @@
         cond_sys_layer {
             bindings = <&mo 2>;
             key-positions = <57 59>;
-            layers = <0 2>;
             require-prior-idle-ms = <150>;
-            slow-release;
             timeout-ms = <50>;
         };
 
