@@ -247,7 +247,7 @@ combos:
 - p: [47, 49]
   k: $$mdi:backspace-reverse-outline$$
   l: [default]
-- p: [48, 49]
+- p: [48, 47]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [default]
 - p: [17, 15]
@@ -259,3 +259,27 @@ combos:
 - p: [37, 50]
   k: {t: default, h: toggle}
   l: [numpad]
+- p: [15, 28]
+  k: '!'
+  l: [default]
+- p: [16, 29]
+  k: '@'
+  l: [default]
+- p: [17, 30]
+  k: '#'
+  l: [default]
+- p: [18, 31]
+  k: $
+  l: [default]
+- p: [20, 33]
+  k: '%'
+  l: [default]
+- p: [21, 34]
+  k: ^
+  l: [default]
+- p: [22, 35]
+  k: '&'
+  l: [default]
+- p: [23, 36]
+  k: '*'
+  l: [default]
