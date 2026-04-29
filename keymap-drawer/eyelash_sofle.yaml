@@ -253,10 +253,10 @@ combos:
 - p: [17, 15]
   k: '&bracket_soft'
   l: [default]
-- p: [37, 50]
+- p: [27, 40]
   k: {t: numpad, h: toggle}
   l: [default]
-- p: [37, 50]
+- p: [27, 40]
   k: {t: default, h: toggle}
   l: [numpad]
 - p: [15, 28]
@@ -289,9 +289,9 @@ combos:
 - p: [16, 29]
   k: PRINTSCREEN
   l: [numpad]
-- p: [27, 40]
+- p: [37, 50]
   k: {t: system, h: toggle}
   l: [default]
-- p: [27, 40]
+- p: [37, 50]
   k: {t: default, h: toggle}
   l: [system]
