@@ -391,11 +391,11 @@
 
         numpad_arrow {
             bindings = <
-&trans  &trans            &trans           &trans        &trans           &trans        &trans  &trans         &trans                        &trans               &trans               &trans                         &trans
-&trans  &kp ESCAPE        &kp PRINTSCREEN  &kp UP_ARROW  &kp EXCLAMATION  &kp AT        &trans  &kp PERCENT    &kp N7                        &kp N8               &kp N9               &kp DOUBLE_QUOTES              &trans
-&trans  &kp DELETE        &kp LEFT         &kp DOWN      &kp RIGHT        &kp HASH      &trans  &kp CARET      &hrm_ctrl_R RIGHT_CONTROL N4  &hrm_R RIGHT_ALT N5  &hrm_R RIGHT_GUI N6  &hrm_R RIGHT_SHIFT APOSTROPHE  &trans
-&trans  &kp LEFT_CONTROL  &kp MINUS        &kp EQUAL     &kp ASTERISK     &kp DOLLAR    &trans  &kp AMPERSAND  &kp N1                        &kp N2               &kp N3               &kp ENTER                      &trans
-&trans  &trans            &trans           &trans        &trans           &trans        &trans  &trans         &kp N0                        &trans               &trans               &trans
+&trans  &trans            &trans           &trans        &trans     &trans    &trans  &trans  &trans                        &trans               &trans               &trans                         &trans
+&trans  &kp ESCAPE        &kp PRINTSCREEN  &kp UP_ARROW  &trans     &trans    &trans  &trans  &kp N7                        &kp N8               &kp N9               &kp DOUBLE_QUOTES              &trans
+&trans  &kp DELETE        &kp LEFT         &kp DOWN      &kp RIGHT  &trans    &trans  &trans  &hrm_ctrl_R RIGHT_CONTROL N4  &hrm_R RIGHT_ALT N5  &hrm_R RIGHT_GUI N6  &hrm_R RIGHT_SHIFT APOSTROPHE  &trans
+&trans  &kp LEFT_CONTROL  &trans           &trans        &trans     &trans    &trans  &trans  &kp N1                        &kp N2               &kp N3               &kp ENTER                      &trans
+&trans  &trans            &trans           &trans        &trans     &trans    &trans  &trans  &kp N0                        &trans               &trans               &trans
             >;
 
             label = "numpad";
