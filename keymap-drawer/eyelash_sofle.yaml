@@ -240,7 +240,6 @@ combos:
   l: [numpad]
 - p: [57, 59]
   k: system
-  l: [default, system]
 - p: [40, 42]
   k: Ctl+X
   l: [default]
