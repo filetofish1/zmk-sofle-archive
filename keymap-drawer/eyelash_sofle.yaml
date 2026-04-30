@@ -41,7 +41,7 @@ layers:
   - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
+  - Z
   - X
   - C
   - V
@@ -291,3 +291,6 @@ combos:
 - p: [37, 50]
   k: {t: default, h: toggle}
   l: [system]
+- p: [56, 57]
+  k: $$mdi:apple-keyboard-control$$
+  l: [default]
