@@ -41,7 +41,7 @@ layers:
   - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Z
+  - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
   - X
   - C
   - V
@@ -93,7 +93,7 @@ layers:
   - '"'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: PRINTSCREEN, h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -106,7 +106,7 @@ layers:
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: PRINTSCREEN, h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:skip-previous$$
   - $$mdi:play-pause$$
   - $$mdi:skip-next$$
@@ -291,6 +291,3 @@ combos:
 - p: [37, 50]
   k: {t: default, h: toggle}
   l: [system]
-- p: [56, 57]
-  k: $$mdi:apple-keyboard-control$$
-  l: [default]
