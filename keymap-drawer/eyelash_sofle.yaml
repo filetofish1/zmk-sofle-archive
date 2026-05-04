@@ -421,3 +421,9 @@ combos:
   l: [system]
 - p: [57, 59]
   k: system
+- p: [14, 16, 18]
+  k: {t: mmv, h: toggle}
+  l: [default]
+- p: [14, 16, 18]
+  k: {t: default, h: toggle}
+  l: [mmv]
