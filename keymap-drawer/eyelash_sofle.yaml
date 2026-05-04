@@ -15,11 +15,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Q, type: held}
+  - Q
   - W
-  - {t: E, type: held}
+  - E
   - R
-  - {t: T, type: held}
+  - T
   - {t: '$$mdi:transfer$$', type: trans}
   - Y
   - U
@@ -210,11 +210,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
@@ -422,8 +422,8 @@ combos:
 - p: [57, 59]
   k: system
 - p: [14, 16, 18]
-  k: mmv
+  k: {t: mmv, h: toggle}
   l: [default]
 - p: [14, 16, 18]
-  k: default
+  k: {t: default, h: toggle}
   l: [mmv]
