@@ -202,62 +202,6 @@ combos:
 - p: [22, 23]
   k: {t: '=', s: +}
   l: [default]
-- p: [41, 42]
-  k: Ctl+C
-  l: [default]
-- p: [42, 43]
-  k: Ctl+V
-  l: [default]
-- p: [15, 28]
-  k: $$mdi:apple-keyboard-caps$$
-  l: [numpad]
-- p: [17, 30]
-  k: PgUp
-  l: [numpad]
-- p: [30, 43]
-  k: PgDn
-  l: [numpad]
-- p: [40, 41]
-  k: Ctl+Z
-  l: [default]
-- p: [16, 15]
-  k: (
-  l: [default]
-- p: [16, 17]
-  k: )
-  l: [default]
-- p: [21, 34]
-  k: {t: '[', s: '{'}
-  l: [numpad]
-- p: [22, 35]
-  k: {t: ']', s: '}'}
-  l: [numpad]
-- p: [34, 47]
-  k: '{'
-  l: [numpad]
-- p: [35, 48]
-  k: '}'
-  l: [numpad]
-- p: [57, 59]
-  k: system
-- p: [40, 42]
-  k: Ctl+X
-  l: [default]
-- p: [47, 49]
-  k: $$mdi:backspace-reverse-outline$$
-  l: [default]
-- p: [48, 47]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [default]
-- p: [17, 15]
-  k: '&bracket_soft'
-  l: [default]
-- p: [27, 40]
-  k: {t: numpad, h: toggle}
-  l: [default]
-- p: [27, 40]
-  k: {t: default, h: toggle}
-  l: [numpad]
 - p: [15, 28]
   k: '!'
   l: [default]
@@ -282,8 +226,62 @@ combos:
 - p: [23, 36]
   k: '*'
   l: [default]
+- p: [16, 15]
+  k: (
+  l: [default]
+- p: [16, 17]
+  k: )
+  l: [default]
+- p: [17, 15]
+  k: '&bracket_soft'
+  l: [default]
+- p: [21, 34]
+  k: {t: '[', s: '{'}
+  l: [numpad]
+- p: [22, 35]
+  k: {t: ']', s: '}'}
+  l: [numpad]
+- p: [34, 47]
+  k: '{'
+  l: [numpad]
+- p: [35, 48]
+  k: '}'
+  l: [numpad]
+- p: [40, 41]
+  k: Ctl+Z
+  l: [default]
+- p: [40, 42]
+  k: Ctl+X
+  l: [default]
+- p: [41, 42]
+  k: Ctl+C
+  l: [default]
+- p: [42, 43]
+  k: Ctl+V
+  l: [default]
+- p: [47, 49]
+  k: $$mdi:backspace-reverse-outline$$
+  l: [default]
+- p: [48, 47]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [default]
+- p: [15, 28]
+  k: $$mdi:apple-keyboard-caps$$
+  l: [numpad]
+- p: [17, 30]
+  k: PgUp
+  l: [numpad]
+- p: [30, 43]
+  k: PgDn
+  l: [numpad]
 - p: [15, 17]
   k: $$mdi:volume-off$$
+  l: [numpad]
+- p: [27, 40]
+  k: {t: numpad, h: toggle}
+  l: [default]
+- p: [27, 40]
+  k: {t: default, h: toggle}
   l: [numpad]
 - p: [37, 50]
   k: {t: system, h: toggle}
@@ -291,3 +289,5 @@ combos:
 - p: [37, 50]
   k: {t: default, h: toggle}
   l: [system]
+- p: [57, 59]
+  k: system
