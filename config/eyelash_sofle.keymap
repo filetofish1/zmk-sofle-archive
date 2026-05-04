@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10   // 10
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
-&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+&msc_input_listener { input-processors = <&zip_scroll_scaler 1 1>; };
 &mmv {
     time-to-max-speed-ms = <200>;
     trigger-period-ms = <16>;
@@ -432,13 +432,13 @@ combos {
             label = "mmv";
         };
 
-        mouse2 {
+mouse2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB1  &mkp MB2        &mkp MB3        &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans           &trans            &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &msc SCRL_DOWN   &mmv MOVE_Y(-200) &msc SCRL_UP      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &mmv MOVE_X(-200)&mmv MOVE_Y(200)  &mmv MOVE_X(200)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans           &trans            &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB1  &mkp MB2         &mkp MB3          &trans            &trans
             >;
 
             label = "mmv2";
