@@ -117,7 +117,7 @@
         /* Shift variants (shorter tapping term for quick capitalization) */
     };
 
-combos {
+    combos {
         compatible = "zmk,combos";
 
         minus {
@@ -418,11 +418,21 @@ combos {
 &trans  &trans  &trans   &trans   &trans   &trans       &trans  &trans         &trans             &trans           &trans         &trans           &trans
 &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans       &trans  &trans         &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3     &trans
 &trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp GRAVE    &trans  &kp BACKSLASH  &kp RIGHT_CONTROL  &kp RIGHT_ALT    &kp RIGHT_GUI  &kp RIGHT_SHIFT  &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp TILDE    &trans  &kp PIPE       &bt BT_CLR_ALL     &rgb_ug RGB_TOG  &out OUT_TOG   &bt BT_CLR_ALL   &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp TILDE    &trans  &kp PIPE       &bt BT_CLR         &rgb_ug RGB_TOG  &out OUT_TOG   &bt BT_CLR_ALL   &trans
 &trans  &trans  &trans   &trans   &trans   &trans       &trans  &trans         &trans             &trans           &trans         &trans
             >;
 
             label = "system";
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans
+            >;
         };
     };
 
