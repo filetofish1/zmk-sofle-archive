@@ -15,10 +15,12 @@
         layers = <3>;
         input-processors = <&zip_xy_scaler 4 1>;
     };
+
     slow_mouse {
         layers = <4>;
         input-processors = <&zip_xy_scaler 1 1>;
     };
+
     input-processors = <&zip_xy_scaler 1 1>;
 };
 
@@ -424,6 +426,7 @@
             >;
 
             display-name = "default";
+            sensor-bindings = <&scroll_encoder>;
         };
 
         numpad_arrow {
