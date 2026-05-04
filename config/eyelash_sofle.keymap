@@ -453,8 +453,8 @@
         mouse2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans             &trans             &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &msc SCRL_DOWN     &mmv MOVE_Y(-200)  &msc SCRL_UP      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &mmv MOVE_X(-200)  &mmv MOVE_Y(200)   &mmv MOVE_X(200)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &msc SCRL_DOWN     &mmv MOVE_Y(-400)  &msc SCRL_UP      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans             &trans             &trans            &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB1  &mkp MB2           &mkp MB3           &trans            &trans
             >;
