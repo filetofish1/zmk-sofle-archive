@@ -378,7 +378,7 @@
         };
 
         to_mmv {
-            bindings = <&mo 3>;
+            bindings = <&to 3>;
             key-positions = <14 16 18>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
@@ -386,7 +386,7 @@
         };
 
         back_mmv {
-            bindings = <&mo 0>;
+            bindings = <&to 0>;
             key-positions = <14 16 18>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
@@ -415,7 +415,6 @@
 &trans  &trans               &trans             &trans             &kp LEFT_SHIFT              &tab_layer1 1 TAB    &trans  &kp BACKSPACE  &kp SPACE                    &trans              &trans              &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
             display-name = "default";
         };
 
