@@ -350,7 +350,7 @@
         };
 
         to_system {
-            bindings = <&to 2>;
+            bindings = <&to 3>;
             key-positions = <37 50>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
@@ -362,29 +362,7 @@
             key-positions = <37 50>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <2>;
-        };
-
-        cond_sys_layer {
-            bindings = <&mo 2>;
-            key-positions = <57 59>;
-            require-prior-idle-ms = <50>;
-            timeout-ms = <50>;
-        };
-
-        to_mmv {
-            bindings = <&to 0>;
-            key-positions = <14 16 18>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <50>;
-            layers = <0>;
-        };
-
-        from_mmv {
-            bindings = <&to 0>;
-            key-positions = <14 16 18>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <50>;
+            layers = <3>;
         };
     };
 
@@ -402,11 +380,11 @@
 
         default {
             bindings = <
-&trans  &trans               &trans             &trans             &trans                      &trans               &trans  &trans         &trans                       &trans              &trans              &trans                        &trans
-&trans  &kp Q                &kp W              &kp E              &kp R                       &kp T                &trans  &kp Y          &kp U                        &kp I               &kp O               &kp P                         &trans
-&trans  &hrm_L LEFT_SHIFT A  &hrm_L LEFT_GUI S  &hrm_L LEFT_ALT D  &hrm_ctrl_L LEFT_CONTROL F  &kp G                &trans  &kp H          &hrm_ctrl_R RIGHT_CONTROL J  &hrm_R RIGHT_ALT K  &hrm_R RIGHT_GUI L  &hrm_R RIGHT_SHIFT SEMICOLON  &trans
-&trans  &z_ctrl LCTRL Z      &kp X              &kp C              &kp V                       &kp B                &trans  &kp N          &kp M                        &kp COMMA           &kp DOT             &kp SLASH                     &trans
-&trans  &trans               &trans             &trans             &kp LEFT_SHIFT              &tab_layer1 1 TAB    &trans  &kp BACKSPACE  &kp SPACE                    &trans              &trans              &trans
+&trans  &trans               &trans             &trans             &trans                      &trans               &trans  &trans                   &trans                       &trans              &trans              &trans                        &trans
+&trans  &kp Q                &kp W              &kp E              &kp R                       &kp T                &trans  &kp Y                    &kp U                        &kp I               &kp O               &kp P                         &trans
+&trans  &hrm_L LEFT_SHIFT A  &hrm_L LEFT_GUI S  &hrm_L LEFT_ALT D  &hrm_ctrl_L LEFT_CONTROL F  &kp G                &trans  &kp H                    &hrm_ctrl_R RIGHT_CONTROL J  &hrm_R RIGHT_ALT K  &hrm_R RIGHT_GUI L  &hrm_R RIGHT_SHIFT SEMICOLON  &trans
+&trans  &z_ctrl LCTRL Z      &kp X              &kp C              &kp V                       &kp B                &trans  &kp N                    &kp M                        &kp COMMA           &kp DOT             &kp SLASH                     &trans
+&trans  &trans               &trans             &trans             &kp LEFT_SHIFT              &tab_layer1 1 TAB    &trans  &tab_layer1 2 BACKSPACE  &kp SPACE                    &trans              &trans              &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -425,6 +403,18 @@
             label = "numpad";
         };
 
+        symbols {
+            bindings = <
+&trans  &trans            &trans             &trans                &trans                 &trans    &trans  &trans  &trans       &trans     &trans          &trans           &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans  &trans  &kp MINUS    &kp EQUAL  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+&trans  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH              &kp DOLLAR             &trans    &trans  &trans  &kp PERCENT  &kp CARET  &kp AMPERSAND   &kp ASTERISK     &trans
+&trans  &trans            &trans             &trans                &trans                 &trans    &trans  &trans  &trans       &trans     &trans          &trans           &trans
+&trans  &trans            &trans             &trans                &trans                 &trans    &trans  &trans  &trans       &trans     &trans          &trans
+            >;
+
+            label = "symbols";
+        };
+
         system {
             bindings = <
 &trans  &trans  &trans   &trans   &trans   &trans       &trans  &trans         &trans             &trans           &trans         &trans           &trans
@@ -438,5 +428,12 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        system {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
 };
