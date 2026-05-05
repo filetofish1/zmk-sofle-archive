@@ -121,6 +121,9 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <14 15 16 17 27 28 29 30 40 41 42 43 34 35 36 37>;
+            hold-trigger-on-release;
         };
 
         /* Shift variants (shorter tapping term for quick capitalization) */
