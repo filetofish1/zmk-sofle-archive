@@ -30,7 +30,6 @@
         tap-ms = <100>;
     };
 
-
     behaviors {
         hrm_L: hrm_L {
             compatible = "zmk,behavior-hold-tap";
@@ -374,7 +373,7 @@
         };
 
         to_mmv {
-            bindings = <&to 3>;
+            bindings = <&to 0>;
             key-positions = <14 16 18>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
@@ -386,7 +385,6 @@
             key-positions = <14 16 18>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <3>;
         };
     };
 
@@ -437,30 +435,6 @@
             >;
 
             label = "system";
-        };
-
-        mouse {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &mo 4   &trans    &trans  &mkp MB1  &mkp MB2        &mkp MB3        &trans           &trans
-            >;
-
-            label = "mmv";
-        };
-
-        mouse2 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans             &trans             &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &msc SCRL_DOWN     &mmv MOVE_Y(-400)  &msc SCRL_UP      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans             &trans             &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB1  &mkp MB2           &mkp MB3           &trans            &trans
-            >;
-
-            label = "mmv2";
         };
     };
 
