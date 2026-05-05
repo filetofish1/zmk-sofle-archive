@@ -12,7 +12,13 @@
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
-&msc_input_listener { input-processors = <&zip_scroll_scaler 1 1>; };
+&msc_input_listener { input-processors = <&zip_scroll_scaler 3 1>; };
+
+&msc_slow_input_listener {
+    input-processors = <&zip_scroll_scaler 1 1>;};
+
+&msc_slow {
+    input-listener = <&msc_slow_input_listener>;};
 
 &mmv {
     time-to-max-speed-ms = <200>;
