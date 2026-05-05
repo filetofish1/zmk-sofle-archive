@@ -60,7 +60,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-tab$$', h: numpad}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', h: system}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -149,9 +149,9 @@ layers:
   - F2
   - F3
   - F4
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&bracket_soft'
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -188,7 +188,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -232,9 +232,6 @@ combos:
 - p: [16, 17]
   k: )
   l: [default]
-- p: [17, 15]
-  k: '&bracket_soft'
-  l: [default]
 - p: [21, 34]
   k: {t: '[', s: '{'}
   l: [numpad]
@@ -259,19 +256,16 @@ combos:
 - p: [42, 43]
   k: Ctl+V
   l: [default]
-- p: [47, 49]
+- p: [49, 48]
   k: $$mdi:backspace-reverse-outline$$
   l: [default]
 - p: [48, 47]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [default]
-- p: [15, 28]
-  k: $$mdi:apple-keyboard-caps$$
-  l: [numpad]
-- p: [17, 30]
+- p: [16, 29]
   k: PgUp
   l: [numpad]
-- p: [30, 43]
+- p: [29, 42]
   k: PgDn
   l: [numpad]
 - p: [15, 17]
@@ -289,10 +283,3 @@ combos:
 - p: [37, 50]
   k: {t: default, h: toggle}
   l: [system]
-- p: [57, 59]
-  k: system
-- p: [14, 16, 18]
-  k: {t: default, h: toggle}
-  l: [default]
-- p: [14, 16, 18]
-  k: {t: default, h: toggle}
