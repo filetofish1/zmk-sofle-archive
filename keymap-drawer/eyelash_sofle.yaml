@@ -93,7 +93,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:backspace-reverse-outline$$
+  - PRINTSCREEN
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -106,7 +106,7 @@ layers:
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: PRINTSCREEN, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:skip-previous$$
   - $$mdi:play-pause$$
   - $$mdi:skip-next$$
@@ -202,28 +202,28 @@ combos:
 - p: [22, 23]
   k: {t: '=', s: +}
   l: [default]
-- p: [15, 28]
+- p: [14, 27]
   k: '!'
   l: [default]
-- p: [16, 29]
+- p: [15, 28]
   k: '@'
   l: [default]
-- p: [17, 30]
+- p: [16, 29]
   k: '#'
   l: [default]
-- p: [18, 31]
+- p: [17, 30]
   k: $
   l: [default]
-- p: [20, 33]
+- p: [21, 34]
   k: '%'
   l: [default]
-- p: [21, 34]
+- p: [22, 35]
   k: ^
   l: [default]
-- p: [22, 35]
+- p: [23, 36]
   k: '&'
   l: [default]
-- p: [23, 36]
+- p: [24, 37]
   k: '*'
   l: [default]
 - p: [16, 15]
@@ -271,15 +271,3 @@ combos:
 - p: [15, 17]
   k: $$mdi:volume-off$$
   l: [numpad]
-- p: [27, 40]
-  k: {t: numpad, h: toggle}
-  l: [default]
-- p: [27, 40]
-  k: {t: default, h: toggle}
-  l: [numpad]
-- p: [37, 50]
-  k: {t: system, h: toggle}
-  l: [default]
-- p: [37, 50]
-  k: {t: default, h: toggle}
-  l: [system]
